@@ -15,31 +15,68 @@
 
     <!-- Add custom CSS here -->
     
-    <style media="screen" type="text/css" href="css/half-slider.css">
-	html, body {
-	  height:100%;
-	}
-	.carousel {
-       		height:50%;
-	}
-	.item,
-	.active,
-	.carousel-inner {
-		height:100%;
-	}
-	.fill {
-		width:100%;
-		height:100%;
-		background-position: center;
-		background-size: cover;
-	}
-	.section {
-		margin: 50px 0;
-	}
-	footer {
-		margin: 50px 0;
-	}
-    </style>
+  <style media="screen" type="text/css" href="css/half-slider.css">
+  	html, body {
+  	  height:100%;
+  	}
+  	.carousel {
+         		height:50%;
+  	}
+  	.item,
+  	.active,
+  	.carousel-inner {
+  		height:100%;
+  	}
+  	.fill {
+  		width:100%;
+  		height:100%;
+  		background-position: center;
+  		background-size: cover;
+  	}
+  	.section {
+  		margin: 50px 0;
+  	}
+  	footer {
+  		margin: 50px 0;
+  	}
+  </style>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <!-- WHY DOESN'T IT DROP WHEN I CLICK ON IT?! -->
+            <span class="icon-bar">Test1</span>
+            <span class="icon-bar">Test2</span>
+            <span class="icon-bar">Test3</span>
+          </button>
+    <!-- <a class="navbar-brand">BPSC Home Page</a> -->
+        </div>
+<!-- <div class="container"> <a href="#"><img class = "brand" src="http://placehold.it/269x50" alt="SparkCharger" /></a> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            <li class="hiddentab"><a href="/users/login">
+              <!-- WHITE SPACES -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Log In</a>
+            </li>            
+            <li class="hiddentab"><a href="/users/register">Register</a></li>            
+            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
     
   {% endblock %}
 
@@ -47,68 +84,88 @@
 
   <!-- <body> -->
   {% block content %}
-
-
-
-    <nav class="navbar navbar-static-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-	    <span class="sr-only">Toggle navigation</span>
-        <!-- WHY DOESN'T IT DROP WHEN I CLICK ON IT?! -->
-            <span class="icon-bar">Test1</span>
-            <span class="icon-bar">Test2</span>
-            <span class="icon-bar">Test3</span>
-          </button>
-	  <!-- <a class="navbar-brand">BPSC Home Page</a> -->
-        </div>
-<!-- <div class="container"> <a href="#"><img class = "brand" src="http://placehold.it/269x50" alt="SparkCharger" /></a> -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
-            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
-            <li class="hiddentab"><a href="/company/google">Google</a></li>
-            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
-      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
-            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
     
     <h1> COMPANY PROJECT </h1>
+    
+    <!-- SEARCH BOX -->
+      <style>
+        #search {
+          width: 175px;
+        }
+        .ui-autocomplete {
+          max-height: 300px;
+          overflow-y: auto;
+          /* prevent horizontal scrollbar */
+          overflow-x: hidden;
+          /* add padding to account for vertical scrollbar */
+          padding-right: 20px;
+        }
+      </style>
+      <script>
+      $(function() {
+        var projects = '/courses.json'
+        $( "#search" ).autocomplete({
+          minLength: 2,
+          source: projects,
+          focus: function( event, ui ) {
+            $( "#search" ).val( ui.item.course.abbrev );
+            return false;
+          },
+          select: function( event, ui ) {
+            var tag = "<li class=course id=course_" + ui.item.id + "/>"
+            var $li = $(tag).text(ui.item.abbrev);
+            $("#sortable_0").append($li);
+            $("#sortable_0").sortable('refresh');
+            var schedule_id = '12';
+            $.post("/courses/add_to_bucket", {course_id:ui.item.id, schedule:schedule_id})
+            return false;
+          }
+        })
+        .data( "autocomplete" )._renderItem = function( ul, item ) {
+          return $( "<li></li>" )
+            .data( "item.autocomplete", item )
+            .append( "<a>" + item.abbrev + "</a>" )
+            .appendTo( ul );
+        };
+      });
+      </script>
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">Search for Companies:</li>
+            <input id="search"/>
+            <input type="hidden" id="project-id"/>
+        </ul>
+      </div>
+    <!-- END SEARCH BOX -->
 
     <div class="container container-home">
-
       <div class="row">
-  <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <ul height="70px" width="70px">Learn about company products, competitors, and acquisitions!</ul>
-    </div>
-  </button>
-    <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <ul height="70px" width="70px">Follow your favorite companies to keep up-to-date with them!</ul>
-    </div>
-  </button>
-    <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <ul height="70px" width="70px">Show recruiters that you understand their companies!</ul>
-    </div>
-  </button>
-    <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <ul height="70px" width="70px">Take notes of your encounters with companies!</ul>
-    </div>
-  </button>
-  <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <ul height="70px" width="70px"> Share company information with your friends!</u1>
-    </div>
-  </button>
-    </div>
+        <button type="button" class="btn btn-default btn-lg btn-block btn-home">
+          <div class="buttonlabel">
+            <ul height="70px" width="70px">Learn about company products, competitors, and acquisitions!</ul>
+          </div>
+        </button>
+        <button type="button" class="btn btn-default btn-lg btn-block btn-home">
+          <div class="buttonlabel">
+            <ul height="70px" width="70px">Follow your favorite companies to keep up with what they are doing!</ul>
+          </div>
+        </button>
+        <button type="button" class="btn btn-default btn-lg btn-block btn-home">
+          <div class="buttonlabel">
+            <ul height="70px" width="70px">Show recruiters that you know their companies!</ul>
+          </div>
+        </button>
+        <button type="button" class="btn btn-default btn-lg btn-block btn-home">
+          <div class="buttonlabel">
+            <ul height="70px" width="70px">Take notes of your encounters with companies!</ul>
+          </div>
+        </button>
+        <button type="button" class="btn btn-default btn-lg btn-block btn-home">
+          <div class="buttonlabel">
+            <ul height="70px" width="70px"> Share company information with your friends!</u1>
+          </div>
+        </button>
+      </div>
       
       <hr>
       
@@ -125,6 +182,7 @@
       </footer>
 
     </div><!-- /.container -->
+
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
