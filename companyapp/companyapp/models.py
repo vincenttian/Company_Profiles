@@ -4,6 +4,19 @@ from django.db import models
 class Product(models.Model):
 	name = models.CharField(max_length=50)
 
+	def __unicode__(self):
+		return "%(name)s" % {"name": self.name}
+
+class Salary(models.Model):
+	company_name = models.CharField(max_length=50)
+	position = models.CharField(max_length=50)
+	ranges = models.CharField(max_length=50)
+	mean = models.CharField(max_length=50)
+	samples = models.CharField(max_length=50)
+
+	def __unicode__(self):
+		return "%(position)s %(company_name)s %(mean)s %(samples)s" % {"position": self.position, "company_name": self.company_name, "mean": self.mean, "samples": self.samples}
+
 class Company(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
 	ticker = models.CharField(max_length=50, blank=True)
@@ -23,6 +36,7 @@ class Company(models.Model):
 	acquisitions = models.TextField()
 	investments = models.TextField()
 	products = models.TextField()
+	salaries = models.TextField()
 
 	# KEEPING THINGS SIMPLE FOR NOW
 	# competitors = models.ForeignKey('self', related_name = 'competitor')
