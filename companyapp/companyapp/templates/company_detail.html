@@ -5,18 +5,76 @@
 {% endblock %}
 
 {% block head %}
-<div class="hiddentab"><a href="/">Home</a></div>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-<br></br>
+<nav class="navbar navbar-static-top" role="navigation">
+  <div class="container">
+	<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="hiddentab"><a href="/"> Home </a></li>      	
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
 
-COMPANY PROFILE
 {% endblock %}
 
 {% block content %}
 
-<br></br>
+<h1> COMPANY PROJECT </h1>
 
-<div> Company name: {{ company.name }} </div> 
+<h1> {{ company.name }} </h1>
+
+<table class="table table-striped table-bordered">
+	<caption> Basic Information </caption>
+	<tr>
+		<td> Company name: </td>
+		<td> {{ company.name }} </td>
+	</tr>
+	<tr>
+		<td> Company ticker: </td>
+		<td>{{ company.ticker }} </td>
+	</tr>
+	<tr>
+		<td> Stock exchange: </td>
+		<td>{{ company.stock_exchange }} </td>
+	</tr>
+	<tr>
+		<td> Company website: </td>
+		<td>{{ company.website }} </td>
+	</tr>
+	<tr>
+		<td> Company CEO: </td>
+		<td>{{ company.CEO }} </td>
+	</tr>
+	<tr>
+		<td> Company size: </td>
+		<td>{{ company.size }} </td>
+	</tr>
+	<tr>
+		<td> Company type: </td>
+		<td>{{ company.company_type }} </td>
+	</tr>
+	<tr>
+		<td> Company founded: </td>
+		<td>{{ company.founded }} </td>
+	</tr>
+	<tr>
+		<td> Company location: </td>
+		<td>{{ company.location }} </td>
+	</tr>
+	<tr>
+		<td> Company industry: </td>
+		<td>{{ company.industry }} </td>
+	</tr>
+	<tr>
+		<td> Company description: </td>
+		<td>{{ company.description }} </td>
+	</tr>
+</table>
+
+<!-- <div> Company name: {{ company.name }} </div> 
 <div> Company ticker: {{ company.ticker }} </div>
 <div> Company stock_exchange: {{ company.stock_exchange }} </div>
 <div> Company website: {{ company.website }} </div>
@@ -27,26 +85,42 @@ COMPANY PROFILE
 <div> Company IPO_year: {{ company.IPO_year }} </div>
 <div> Company location: {{ company.location }} </div>
 <div> Company industry: {{ company.industry }} </div>
-<div> Company description: {{ company.description }} </div>
+<div> Company description: {{ company.description }} </div> -->
 
-<br></br>
+<table class="table table-striped">
+	<caption> Competitors </caption>
+	<td> Company competitors: </td>
+	<td>{{ company.competitors }} </td>
+</table>
 
-<div> Company competitors: {{ company.competitors }} </div>
+<!-- <div> Company competitors: {{ company.competitors }} </div> -->
 
-<br></br>
+<table class="table table-striped">
+	<caption> Acquisitions </caption>
+	<td> Company acquisitions: </td>
+	<td>{{ company.acquisitions }} </td>
+</table>
 
-<div> Company acquisitions: {{ company.acquisitions }} </div>
+<!-- <div> Company acquisitions: {{ company.acquisitions }} </div> -->
 
-<br></br>
+<table class="table table-striped">
+	<caption> Investments </caption>
+	<td> Company investments: </td>
+	<td>{{ company.investments }} </td>
+</table>
 
-<div> Company investments: {{ company.investments }} </div>
+<!-- <div> Company investments: {{ company.investments }} </div> -->
 
-<br></br>
+<table class="table table-striped">
+	<caption> Products </caption>
+	<td> Company products: </td>
+	<td>{{ company.products }} </td>
+</table>
 
-<div> Company products: {{ company.products }} </div>
-
-<br></br>
+<!-- <div> Company products: {{ company.products }} </div> -->
 
 <div> Company overview: {{ company.overview }} </div>
+
+<br></br>
 
 {% endblock %}
