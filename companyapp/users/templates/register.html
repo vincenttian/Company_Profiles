@@ -1,8 +1,44 @@
-<form method="post" action="{% url 'users:register' %}">
-{% csrf_token %}
+<link href="http://cdncatalog.com/assets/flat-ui/css/flat-ui.css" rel="stylesheet">
 
-{{ form.as_table }}
+<h4>Company App Registration Portal</h4>
 
-<input type="submit" value="Register" />
-<input type="hidden" name="next" value="{{ next }}" />
-</form>
+<div class="login-form">
+	<form method="post" action="/users/register/">
+		<input type='hidden' name='csrfmiddlewaretoken' value='AhHKEm5TWNAtKnlW4Vi5QZKDa5Il2r3g'/>
+		<div>
+			<tr><th><label for="id_username">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Username:
+			</label></th><td><input id="id_username" maxlength="30" name="username" type="text" /><br /><span class="helptext">
+		</div>
+		<div>
+			<tr><th><label for="id_email">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Email:
+			</label></th><td><input id="id_email" maxlength="75" name="email" type="text" /></td></tr>
+		</div>
+
+		<br></br>
+
+		<div>
+		Required. 30 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>
+		</div>
+
+		<div>
+		<tr><th><label for="id_password1">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Password:
+		</label></th><td><input id="id_password1" name="password1" type="password" /></td></tr>
+		</div>
+		
+		<div>
+		<tr><th><label for="id_password2">Password confirmation:</label></th><td><input id="id_password2" name="password2" type="password" /><br /></td></tr>
+		</div>
+
+		<br></br>
+
+		<input type="submit" value="Register" />
+		<input type="hidden" name="next" value=""/>
+
+	</form>
+</div>
