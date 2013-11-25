@@ -72,17 +72,17 @@ def make_request(client,url,request_headers={},error_string="Failed Request",met
 			return content
 	elif resp.status >= 500 and resp.status < 600:
 			error_string = "Status:\n\tRuh Roh! An application error occured! HTTP 5XX response received."
-			log_diagnostic_info(client,url,request_headers,method,body,resp,content,error_string)
+			# log_diagnostic_info(client,url,request_headers,method,body,resp,content,error_string)
 	else:
 			status_codes = {403: "\n** Status:\n\tA 403 response was received. Usually this means you have reached a throttle limit.",
 							401: "\n** Status:\n\tA 401 response was received. Usually this means the OAuth signature was bad.",
 							405: "\n** Status:\n\tA 405 response was received. Usually this means you used the wrong HTTP method (GET when you should POST, etc).",
 							400: "\n** Status:\n\tA 400 response was received. Usually this means your request was formatted incorrectly or you added an unexpected parameter.",
 							404: "\n** Status:\n\tA 404 response was received. The resource was not found."}
-			if resp.status in status_codes:
-					log_diagnostic_info(client,url,request_headers,method,body,resp,content,status_codes[resp.status])
-			else:
-					log_diagnostic_info(client,url,request_headers,method,body,resp,content,http_status_print[resp.status][1])
+			# if resp.status in status_codes:
+			# 		log_diagnostic_info(client,url,request_headers,method,body,resp,content,status_codes[resp.status])
+			# else:
+			# 		log_diagnostic_info(client,url,request_headers,method,body,resp,content,http_status_print[resp.status][1])
 
 def intify(s):
 	"""Coerce string to int"""
@@ -358,8 +358,22 @@ def parse(soup, raw=False):
 		return json.dumps(data)
 	return data
 
-# COMPANY LIST HERE
-companies = ['yahoo', 'microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'palantir']
+# COMPANY LISTS HERE
+
+# COMPANIES FOR TESTING
+# companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'palantir', 'yahoo']
+
+# BIG LIST OF COMPANIES:
+companies = ['23andme', 'Amazon', 'Ancestry.com', 'Apple', 'Apportable', 'Asana', 'Autodesk', 'Box', \
+'Broadcomm', 'California Technologies', 'Comcast', 'Dell', 'Delta Airlines', 'Dropbox', 'Ebay', 'EMC', \
+'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'Firebase', 'Flipboard', 'Foursquare', 'Google', 'Groupon',\
+ 'Guidewire', 'Hewlett-Packard', 'Hoopla', 'IBM', 'Intel', 'Intuit', 'Jawbone', 'Juniper Networks', 'Klout', \
+ 'Linkedin', 'Magoosh', 'Marin Software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir', \
+ 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'Rackspace', 'Redhat', 'Riot Games', 'Riverbed Technologies', \
+ 'Salesforce', 'Samsung', 'Shoretel', 'Shutterfly', 'Skype', 'Snapchat', 'Spotify', 'Square', \
+ 'Sun Microsystems', 'Symantec', 'Tesla', 'Texas Instruments', 'TubeMogul', 'Twitter', 'Verizon', 'VMWare', \
+ 'Western Digital', 'Workday', 'Yahoo', 'Yelp']
+
 
 class Command(BaseCommand):
 	help = 'Puts all the company information in the database'
@@ -368,60 +382,116 @@ class Command(BaseCommand):
 
 		for company in companies:
 			
+			company = company.lower()
+			name = company
+			print "Loading " + company + " into the database" 
+
 			# GETS DATA FROM LINKEDIN API
 			# Get authorization set up and create the OAuth client
 			client = get_auth() 
 			response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
-			d1 = json.loads(response)
-			
+			try:
+				d1 = json.loads(response)
+			except:
+				d1 = None
+		
 			# GETS DATA FROM CRUNCHBASE API
 			r = requests.get(CRUNCHBASE_URL_1 + company + CRUNCHBASE_URL_2)
 			data = r.text
-			d2 = json.loads(data)
+			# print "got here"
+			try:
+				d2 = json.loads(data)
+			except:
+				d2 = None
+			# print "got here2"
 
 			# GETS DATA FROM GLASSDOOR SCRAPING
 			x = get(company)
 			x_json = x.json()
 			d3 = json.loads(x_json)
+
 			try:
 				sal = d3["salary"]
-			except KeyError:
+			except:
 				company = company + ".com"
 				x = get(company)
 				x_json = x.json()
 				d3 = json.loads(x_json)
 				try:
 					sal = d3["salary"]
-				except KeyError:
+				except:
 					sal = None
 
-			company = Company()
 
-			company.name = d1["name"].lower()
+			company = Company()
+			company.name = name
+
+			if d1 == None:
+				pass
+			else:
+				company.name = d1["name"].lower()
+
 			try:
 				company.ticker = d1["ticker"]
 				company.stock_exchange = d1["stockExchange"]["name"] 
-			except KeyError:
+			except:
 				company.ticker = "Not publicly traded"
 				company.stock_exchange = "Not publicly traded"
-			company.website = d1["websiteUrl"]
-			try:
-				company.CEO = d2["relationships"][0]["person"]["first_name"] + " " + d2["relationships"][0]["person"]["last_name"]
-			except KeyError:
-				company.CEO = "Who is the CEO?" 
-			company.size = d1["employeeCountRange"]["name"]
-			company.company_type = d1["companyType"]["name"]
-			company.founded = str(d1["foundedYear"])
-			try:
-				company.IPO_year = str(d2["ipo"]["pub_year"])
-			except KeyError:
-				company.IPO_year = "Has not IPO'ed yet"
-			company.location = d1["locations"]["values"][0]["address"]["city"]
-			company.industry = d1["industries"]["values"][0]["name"]
-			try:
-				company.description = d2["description"]
-			except KeyError:
-				company.description = "No description"
+
+			if d1 == None:
+				pass
+			else:
+				company.website = d1["websiteUrl"]
+			
+			if d2 == None:
+				pass
+			else:
+				try:
+					company.CEO = d2["relationships"][0]["person"]["first_name"] + " " + d2["relationships"][0]["person"]["last_name"]
+				except:
+					company.CEO = "Who is the CEO?" 
+
+			if d1 == None:
+				pass
+			else:
+				company.size = d1["employeeCountRange"]["name"]
+
+			if d1 == None:
+				pass
+			else:
+				company.company_type = d1["companyType"]["name"]
+			
+			if d1 == None:
+				pass
+			else:
+				company.founded = str(d1["foundedYear"])
+
+			if d2 == None:
+				pass
+			else:
+				try:
+					company.IPO_year = str(d2["ipo"]["pub_year"])
+				except:
+					company.IPO_year = "Has not IPO'ed yet"
+			
+			if d1 == None:
+				pass
+			else:
+				company.location = d1["locations"]["values"][0]["address"]["city"]
+			
+			if d1 == None:
+				pass
+			else:
+				company.industry = d1["industries"]["values"][0]["name"]
+
+			if d2 == None:
+				pass
+			else:
+				try:
+					company.description = d2["description"]
+				except:
+					company.description = "No description"
+			
 			# COMPETITORS
 			competitor_list = {}
 			count = 0
@@ -430,8 +500,9 @@ class Command(BaseCommand):
 					competitor_list[count] = str(competitor["competitor"]["name"])
 					count += 1
 				company.competitors = str(competitor_list)
-			except KeyError:
+			except:
 				company.competitors = "No competitors"
+
 
 			# ACQUISITIONS
 			acquisition_list = {}
@@ -441,7 +512,7 @@ class Command(BaseCommand):
 					acquisition_list[count] = acquisition["company"]["name"]
 					count += 1
 				company.acquisitions = str(acquisition_list)
-			except KeyError:
+			except:
 				company.acquisitions = "No acquisitions"
 
 			# INVESTMENTS
@@ -452,7 +523,7 @@ class Command(BaseCommand):
 					investment_list[count] = [investment["funding_round"]["company"]["name"], investment["funding_round"]["raised_amount"], investment["funding_round"]["funded_year"]]
 					count += 1
 				company.investments = str(investment_list)
-			except KeyError:
+			except:
 				company.investments = "No investments"
 
 			# PRODUCTS
@@ -466,12 +537,12 @@ class Command(BaseCommand):
 					product_list[count] = prod
 					count += 1
 				company.products = str(product_list)
-			except KeyError:
+			except:
 				company.products = "No products"
 
 			try:
 				company.overview = d2["overview"]
-			except KeyError:
+			except:
 				company.overview = "No overview"
 
 			# SALARIES
@@ -501,7 +572,7 @@ class Command(BaseCommand):
 					count += 1
 				company.salaries = str(salary_list)
 				company.save()
-
+			print "Successfully loaded " + name + " into the database" 
 	def handle(self, *args, **options):
 		self.set_database()
 
