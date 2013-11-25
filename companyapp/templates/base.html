@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load staticfiles %}
+    <title>{% block title %} Companies {% endblock %}</title>
+
+    <meta charset="utf-8">
+    {% block meta %}
+    {% endblock %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    {% block head %}
+    COMPANIES
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+        {% block header %}
+        {% endblock %}
+        </div>
+
+        <div class="content">
+        {% block messages %}
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+        </div>
+
+        <div class="footer">
+        {% block footer %}
+        {% endblock %}
+        </div>
+
+    </div>
+
+    {% block scripts %}
+    {% endblock %}
+</body>
+
+</html>

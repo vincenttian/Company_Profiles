@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<br></br>
+
+<div> Company name: {{ company.name }} </div> 
+<div> Company ticker: {{ company.ticker }} </div>
+<div> Company stock_exchange: {{ company.stock_exchange }} </div>
+<div> Company website: {{ company.website }} </div>
+<div> Company CEO: {{ company.CEO }} </div>
+<div> Company size: {{ company.size }} </div>
+<div> Company company_type: {{ company.company_type }} </div>
+<div> Company founded: {{ company.founded }} </div>
+<div> Company IPO_year: {{ company.IPO_year }} </div>
+<div> Company location: {{ company.location }} </div>
+<div> Company industry: {{ company.industry }} </div>
+<div> Company description: {{ company.description }} </div>
+
+<br></br>
+
+<div> Company competitors: {{ company.competitors }} </div>
+
+<br></br>
+
+<div> Company acquisitions: {{ company.acquisitions }} </div>
+
+<br></br>
+
+<div> Company investments: {{ company.investments }} </div>
+
+<br></br>
+
+<div> Company products: {{ company.products }} </div>
+
+<br></br>
+
+<div> Company overview: {{ company.overview }} </div>
+
+{% endblock %}
