@@ -13,9 +13,10 @@ class Salary(models.Model):
 	ranges = models.CharField(max_length=50)
 	mean = models.CharField(max_length=50)
 	samples = models.CharField(max_length=50)
+	url = models.CharField(max_length=50)
 
 	def __unicode__(self):
-		return "%(position)s %(company_name)s %(mean)s %(samples)s" % {"position": self.position, "company_name": self.company_name, "mean": self.mean, "samples": self.samples}
+		return "%(position)s %(company_name)s %(mean)s %(samples)s %(url)s" % {"position": self.position, "company_name": self.company_name, "mean": self.mean, "samples": self.samples, "url": self.url}
 
 class Company(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
