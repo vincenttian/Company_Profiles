@@ -15,6 +15,10 @@ Project Explanation:
    rm company_db
    $ python manage.py syncdb
    $ python manage.py load_data
+
+   To see objects in database, run $ python manage.py shell, then from companyapp.companyapp.models import *
+   Then, run (Class).objects.all() to see all objects in the database e.g. Company.objects.all()
+   
 3. companyapp/companyapp
    $ views.py handles the views
    $ urls.py handles the urls stuff
@@ -27,9 +31,14 @@ TODO:
 2. Have 2 rounds of loading so that companies/competitors are not just strings
 3. Add search box at the top
 4. Add functionality on the front-end
+5. Load same data from different resources so if one API call fails, others can fill in data
+6. Add WYSIWYG form for personal notes
+7. Add friending feature
+8. Finish login/logout/register views
 
 Steps to Run Project:
 
 1. Install everything you need with pip install (insert dependency here)
+
 2. Run server: $ python manage.py runserver
 3. Company information is at http://127.0.0.1:8000/company/(company name)
