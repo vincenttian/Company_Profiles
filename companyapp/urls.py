@@ -8,8 +8,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', home, name='home'),
-    url(r'^survey/$', survey, name='survey'),
-    url(r'^contact/$', contact, name='contact'),
     url(r'^company/', include('companyapp.companyapp.urls', app_name='companyapp', namespace='companyapp')),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),

@@ -13,7 +13,6 @@
     <title> Suitcase Clinic Portal </title>
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'css/bpsc.css' %}" rel="stylesheet">
 
     <!-- Add custom CSS here -->
     
@@ -56,6 +55,7 @@
         <div class="navbar-header">
 	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 	    <span class="sr-only">Toggle navigation</span>
+        <!-- WHY DOESN'T IT DROP WHEN I CLICK ON IT?! -->
             <span class="icon-bar">Test1</span>
             <span class="icon-bar">Test2</span>
             <span class="icon-bar">Test3</span>
@@ -67,9 +67,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'home' %}">RESOURCES</a></li>
-            <li class="hiddentab"><a href="/reviews/reviews">REVIEWS</a></li>
-            <li class="hiddentab"><a href="{% url 'contact' %}">CONTACT</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--  <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
@@ -80,30 +83,25 @@
       <div class="row">
   <button type="button" class="btn btn-default btn-lg btn-block btn-home">
     <div class="buttonlabel">
-      <img src="{% static 'css/images/icon-employment.png' %}" height="70px" width="70px">EMPLOYMENT</img>
+      <ul height="70px" width="70px">Understand the latest industry trends!</ul>
     </div>
   </button>
     <button type="button" class="btn btn-default btn-lg btn-block btn-home">
     <div class="buttonlabel">
-      <img src="{% static 'css/images/icon-housing.png' %}" height="70px" width="70px">HOUSING</img>
+      <ul height="70px" width="70px">Follow your favorite companies to keep up-to-date with them!</ul>
     </div>
   </button>
     <button type="button" class="btn btn-default btn-lg btn-block btn-home">
     <div class="buttonlabel">
-      <img src="{% static 'css/images/icon-commresources.png' %}" height="70px" width="70px">COMMUNITY RESOURCES</img>
+      <ul height="70px" width="70px">Show recruiters that you understand their companies!</ul>
     </div>
   </button>
     <button type="button" class="btn btn-default btn-lg btn-block btn-home">
     <div class="buttonlabel">
-      <img src="{% static 'css/images/icon-govaid.png' %}" height="70px" width="70px">GOVERNMENT AID</img>
+      <ul height="70px" width="70px">Learn about company products, competitors, and acquisitions!</ul>
     </div>
   </button>
-    <button type="button" class="btn btn-default btn-lg btn-block btn-home">
-    <div class="buttonlabel">
-      <img src="{% static 'css/images/icon-legal.png' %}" height="70px" width="70px">LEGAL</img>
     </div>
-  </button>
-</div>
       
       <hr>
       
