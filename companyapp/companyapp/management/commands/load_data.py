@@ -361,18 +361,18 @@ def parse(soup, raw=False):
 # COMPANY LISTS HERE
 
 # COMPANIES FOR TESTING
-# companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'palantir', 'yahoo']
+companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'yahoo', 'asana']
 
 # BIG LIST OF COMPANIES:
-companies = ['23andme', 'Amazon', 'Ancestry.com', 'Apple', 'Apportable', 'Asana', 'Autodesk', 'Box', \
-'Broadcomm', 'California Technologies', 'Comcast', 'Dell', 'Delta Airlines', 'Dropbox', 'Ebay', 'EMC', \
-'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'Firebase', 'Flipboard', 'Foursquare', 'Google', 'Groupon',\
- 'Guidewire', 'Hewlett-Packard', 'Hoopla', 'IBM', 'Intel', 'Intuit', 'Jawbone', 'Juniper Networks', 'Klout', \
- 'Linkedin', 'Magoosh', 'Marin Software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir', \
- 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'Rackspace', 'Redhat', 'Riot Games', 'Riverbed Technologies', \
- 'Salesforce', 'Samsung', 'Shoretel', 'Shutterfly', 'Skype', 'Snapchat', 'Spotify', 'Square', \
- 'Sun Microsystems', 'Symantec', 'Tesla', 'Texas Instruments', 'TubeMogul', 'Twitter', 'Verizon', 'VMWare', \
- 'Western Digital', 'Workday', 'Yahoo', 'Yelp']
+# companies = ['23andme', 'Amazon', 'Ancestry.com', 'Apple', 'Apportable', 'Asana', 'Autodesk', 'Box', \
+# 'Broadcomm', 'California Technologies', 'Comcast', 'Dell', 'Delta Airlines', 'Dropbox', 'Ebay', 'EMC', \
+# 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'Firebase', 'Flipboard', 'Foursquare', 'Google', 'Groupon',\
+#  'Guidewire', 'Hewlett-Packard', 'Hoopla', 'IBM', 'Intel', 'Intuit', 'Jawbone', 'Juniper Networks', 'Klout', \
+#  'Linkedin', 'Magoosh', 'Marin Software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir', \
+#  'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'Rackspace', 'Redhat', 'Riot Games', 'Riverbed Technologies', \
+#  'Salesforce', 'Samsung', 'Shoretel', 'Shutterfly', 'Skype', 'Snapchat', 'Spotify', 'Square', \
+#  'Sun Microsystems', 'Symantec', 'Tesla', 'Texas Instruments', 'TubeMogul', 'Twitter', 'Verizon', 'VMWare', \
+#  'Western Digital', 'Workday', 'Yahoo', 'Yelp']
 
 
 class Command(BaseCommand):

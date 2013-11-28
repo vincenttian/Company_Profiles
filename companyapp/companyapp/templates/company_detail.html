@@ -24,6 +24,27 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
+            	
+            <!-- USER IS LOGGED IN -->
+            {% if user.is_authenticated %}
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            </li>  
+            <li class="hiddentab"><a href="/users/register"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {{user.username}}</a></li>           
+              <!--  TODO: Make username link to user profile -->
+            <!-- <li class="hiddentab"><a href="/users/register">Register</a></li> -->            
+            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>  
+
+            <!-- USER IS NOT LOGGED IN -->
+            {% else %}
             <li class="hiddentab"><a href="/">Home</a></li>
             <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
             <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
@@ -38,7 +59,9 @@
               Log In</a>
             </li>            
             <li class="hiddentab"><a href="/users/register">Register</a></li>            
-            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>            
+            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>  
+            {% endif %}
+
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
