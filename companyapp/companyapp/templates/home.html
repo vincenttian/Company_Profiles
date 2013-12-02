@@ -71,10 +71,12 @@
 
             </li>  
             <li class="hiddentab"><a href="/users/register"> 
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               {{user.username}}</a></li>           
               <!--  TODO: Make username link to user profile -->
             <!-- <li class="hiddentab"><a href="/users/register">Register</a></li> -->            
+            <li class="hiddentab"><a href="/users/logout">Friends</a></li>  <!-- TODO: Make this link to list of friends page -->
+            <li class="hiddentab"><a href="/users/logout">My Companies</a></li>  <!-- TODO: Make this link to list of followed companies -->
             <li class="hiddentab"><a href="/users/logout">Log Out</a></li>  
 
             <!-- USER IS NOT LOGGED IN -->
@@ -113,58 +115,14 @@
     {% else %}
     <h1> Welcome to Company Project !</h1>
     {% endif %}
-    <!-- <h1> COMPANY PROJECT </h1> -->
-    
-    <!-- SEARCH BOX -->
-      <style>
-        #search {
-          width: 175px;
-        }
-        .ui-autocomplete {
-          max-height: 300px;
-          overflow-y: auto;
-          /* prevent horizontal scrollbar */
-          overflow-x: hidden;
-          /* add padding to account for vertical scrollbar */
-          padding-right: 20px;
-        }
-      </style>
-      <script>
-      $(function() {
-        var projects = '/courses.json'
-        $( "#search" ).autocomplete({
-          minLength: 2,
-          source: projects,
-          focus: function( event, ui ) {
-            $( "#search" ).val( ui.item.course.abbrev );
-            return false;
-          },
-          select: function( event, ui ) {
-            var tag = "<li class=course id=course_" + ui.item.id + "/>"
-            var $li = $(tag).text(ui.item.abbrev);
-            $("#sortable_0").append($li);
-            $("#sortable_0").sortable('refresh');
-            var schedule_id = '12';
-            $.post("/courses/add_to_bucket", {course_id:ui.item.id, schedule:schedule_id})
-            return false;
-          }
-        })
-        .data( "autocomplete" )._renderItem = function( ul, item ) {
-          return $( "<li></li>" )
-            .data( "item.autocomplete", item )
-            .append( "<a>" + item.abbrev + "</a>" )
-            .appendTo( ul );
-        };
-      });
-      </script>
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <li class="nav-header">Search for Companies:</li>
-            <input id="search"/>
-            <input type="hidden" id="project-id"/>
-        </ul>
-      </div>
-    <!-- END SEARCH BOX -->
+
+    <!-- 
+    <form method="post">
+      {{ searchform.as_p }}
+      {% csrf_token %}
+      <input type="submit" value="Submit" />
+    </form> 
+    -->
 
       <div class="container">
       <!-- Example row of columns -->
@@ -197,7 +155,7 @@
       <footer>
         <div class="row">
           <div class="col-lg-12">
-            <p>©Copyright Vincent Tian 
+            <p>© Copyright Vincent Tian 
               &middot <a href="https://www.facebook.com/vtian">     Facebook    </a> 
               &middot <a href="https://www.linkedin.com/in/vtian">  LinkedIn    </a> 
               &middot <a href="https://github.com/vincenttian">     GitHub      </a> 

@@ -7,7 +7,7 @@ from companyapp.companyapp.views import *
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'companyapp.views.home', name='home'),
+    # url(r'^$', 'companyapp.views.home', name='home'),
     # url(r'^companyapp/', include('companyapp.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -16,5 +16,6 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     # url(r'^company/$', CompanyView.as_view(), name='company_list'),
+    # url(r'^$', home, name='home'),
     url(r'^(?P<pk>[\w\d\-]+)/$', CompanyView.as_view(), name='company'),
 )
