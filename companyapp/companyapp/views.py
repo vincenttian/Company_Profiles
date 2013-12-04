@@ -29,7 +29,7 @@ class CompanyView(DetailView):
         searchform = context['searchform']
 
         if searchform.is_valid(): # All validation rules pass
-            search = searchform.cleaned_data['company']
+            search = searchform.cleaned_data['company_search']
             return redirect('/company/' + search + '/') # Redirect after POST
         return self.render_to_response(context) 
 

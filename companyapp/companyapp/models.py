@@ -21,7 +21,6 @@ class Salary(models.Model):
 class Company(models.Model):
 	name = models.CharField(max_length=50, primary_key=True)
 	ticker = models.CharField(max_length=50, blank=True)
-	stock_exchange = models.CharField(max_length=50, blank=True)
 	website = models.URLField(max_length=50)
 	CEO = models.CharField(max_length=50)
 	size = models.CharField(max_length=50)

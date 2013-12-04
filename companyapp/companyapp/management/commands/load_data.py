@@ -359,20 +359,24 @@ def parse(soup, raw=False):
 	return data
 
 # COMPANY LISTS HERE
-
+# companies = ['delta-air-lines']
 # COMPANIES FOR TESTING
-companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'yahoo', 'asana']
+# companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'yahoo', 'asana', 'flipboard']
 
-# BIG LIST OF COMPANIES:
-# companies = ['23andme', 'Amazon', 'Ancestry.com', 'Apple', 'Apportable', 'Asana', 'Autodesk', 'Box', \
-# 'Broadcomm', 'California Technologies', 'Comcast', 'Dell', 'Delta Airlines', 'Dropbox', 'Ebay', 'EMC', \
-# 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'Firebase', 'Flipboard', 'Foursquare', 'Google', 'Groupon',\
-#  'Guidewire', 'Hewlett-Packard', 'Hoopla', 'IBM', 'Intel', 'Intuit', 'Jawbone', 'Juniper Networks', 'Klout', \
-#  'Linkedin', 'Magoosh', 'Marin Software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir', \
-#  'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'Rackspace', 'Redhat', 'Riot Games', 'Riverbed Technologies', \
-#  'Salesforce', 'Samsung', 'Shoretel', 'Shutterfly', 'Skype', 'Snapchat', 'Spotify', 'Square', \
-#  'Sun Microsystems', 'Symantec', 'Tesla', 'Texas Instruments', 'TubeMogul', 'Twitter', 'Verizon', 'VMWare', \
-#  'Western Digital', 'Workday', 'Yahoo', 'Yelp']
+# BIG LIST OF COMPANIES THAT WORK:
+companies = \
+['23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk',\
+ 'box', 'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
+ 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', 'Google', \
+ 'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
+ 'Juniper Networks', 'Klout', \
+ 'Linkedin', 'Magoosh', 'marin software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir-Technologies', \
+ 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', 'riot games', 'riverbed technology', \
+ 'Salesforce', 'Samsung-Electronics', 'Shoretel', 'Shutterfly', 'Skype', \
+ 'Snapchat', 'Spotify', 'Square', 'sun microsystems', 'Symantec', 'Tesla-Motors', 'Texas Instruments', \
+ 'Twitter', 'tubemogul', 'Verizon', 'VMWare', 'Western Digital', \
+ 'Workday', 'Yahoo', 'yelp'
+]
 
 
 class Command(BaseCommand):
@@ -384,26 +388,27 @@ class Command(BaseCommand):
 			
 			company = company.lower()
 			name = company
-			print "Loading " + company + " into the database" 
+
+			print "Loading " + company + " into the database"
 
 			# GETS DATA FROM LINKEDIN API
 			# Get authorization set up and create the OAuth client
-			client = get_auth() 
-			response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
-			try:
-				d1 = json.loads(response)
-			except:
-				d1 = None
+			# client = get_auth() 
+			# response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
+			# d1 = json.loads(response)
+			# try:
+			# 	d1 = json.loads(response)
+			# except:
+			# 	d1 = None
 		
 			# GETS DATA FROM CRUNCHBASE API
 			r = requests.get(CRUNCHBASE_URL_1 + company + CRUNCHBASE_URL_2)
 			data = r.text
-			# print "got here"
 			try:
 				d2 = json.loads(data)
 			except:
 				d2 = None
-			# print "got here2"
+			
 
 			# GETS DATA FROM GLASSDOOR SCRAPING
 			x = get(company)
@@ -422,26 +427,18 @@ class Command(BaseCommand):
 				except:
 					sal = None
 
-
 			company = Company()
 			company.name = name
 
-			if d1 == None:
-				pass
-			else:
-				company.name = d1["name"].lower()
-
 			try:
-				company.ticker = d1["ticker"]
-				company.stock_exchange = d1["stockExchange"]["name"] 
+				company.ticker = d2["ipo"]["stock_symbol"]
 			except:
 				company.ticker = "Not publicly traded"
-				company.stock_exchange = "Not publicly traded"
 
-			if d1 == None:
-				pass
+			if d2["homepage_url"] == None:
+				company.website = "Could not find homepage"
 			else:
-				company.website = d1["websiteUrl"]
+				company.website = d2["homepage_url"]
 			
 			if d2 == None:
 				pass
@@ -451,21 +448,24 @@ class Command(BaseCommand):
 				except:
 					company.CEO = "Who is the CEO?" 
 
-			if d1 == None:
-				pass
+			if d2["number_of_employees"] == None:
+				company.size = "Could not find company size"
 			else:
-				company.size = d1["employeeCountRange"]["name"]
+				company.size = d2["number_of_employees"]
 
-			if d1 == None:
-				pass
-			else:
-				company.company_type = d1["companyType"]["name"]
+			try:
+				if d2["ipo"]["pub_year"] != None:
+					company.company_type = "Public company"
+				else:
+					company.company_type = "Private company"
+			except:
+				company.company_type = "Private company"
+
+			try:
+				company.founded = str(d2["founded_year"])
+			except:
+				company.founded = "Could not find founded year"
 			
-			if d1 == None:
-				pass
-			else:
-				company.founded = str(d1["foundedYear"])
-
 			if d2 == None:
 				pass
 			else:
@@ -474,23 +474,28 @@ class Command(BaseCommand):
 				except:
 					company.IPO_year = "Has not IPO'ed yet"
 			
-			if d1 == None:
-				pass
-			else:
-				company.location = d1["locations"]["values"][0]["address"]["city"]
-			
-			if d1 == None:
-				pass
-			else:
-				company.industry = d1["industries"]["values"][0]["name"]
+			office_locations = {}
+			counter = 0
+			for office in d2["offices"]:
+				if office["state_code"] != None:
+					office_locations[counter] = (office["city"], office["state_code"])
+				else:
+					office_locations[counter] = (office["city"], office["country_code"])
+				counter += 1
+			company.location = office_locations
 
-			if d2 == None:
-				pass
+			if d2["category_code"] == None:
+				company.industry = "Could not find industry"
 			else:
-				try:
-					company.description = d2["description"]
-				except:
-					company.description = "No description"
+				company.industry = d2["category_code"]
+
+			# try:
+			if d2["description"] == None:
+				company.description = "No available description"
+			else:
+				company.description = d2["description"]
+			# except:
+			# 	company.description = "No description"
 			
 			# COMPETITORS
 			competitor_list = {}
@@ -540,9 +545,9 @@ class Command(BaseCommand):
 			except:
 				company.products = "No products"
 
-			try:
+			if d2["overview"] != None:
 				company.overview = d2["overview"]
-			except:
+			else:
 				company.overview = "No overview"
 
 			# SALARIES
@@ -573,6 +578,7 @@ class Command(BaseCommand):
 				company.salaries = str(salary_list)
 				company.save()
 			print "Successfully loaded " + name + " into the database" 
+
 	def handle(self, *args, **options):
 		self.set_database()
 

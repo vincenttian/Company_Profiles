@@ -73,12 +73,16 @@
 {% block content %}
 
 <h1> Company Project </h1>
-
-<form method="post">
-  {{ searchform.as_p }}
-  {% csrf_token %}
-  <input type="submit" value="Submit" />
-</form>
+<div class="well sidebar-nav">
+	<ul class="nav nav-list">
+		<form method="post">
+			{% csrf_token %}
+		    {{ searchform.as_p }}
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <input type="submit" value="Submit" />
+		</form>
+	</u1>
+</div>
 
 <h1> {{ company.name }} </h1>
 
@@ -91,10 +95,6 @@
 	<tr>
 		<td> Company ticker: </td>
 		<td>{{ company.ticker }} </td>
-	</tr>
-	<tr>
-		<td> Stock exchange: </td>
-		<td>{{ company.stock_exchange }} </td>
 	</tr>
 	<tr>
 		<td> Company website: </td>
@@ -117,17 +117,19 @@
 		<td>{{ company.founded }} </td>
 	</tr>
 	<tr>
-		<td> Company location: </td>
+		<td> Company locations: </td>
 		<td>{{ company.location }} </td>
 	</tr>
 	<tr>
 		<td> Company industry: </td>
 		<td>{{ company.industry }} </td>
 	</tr>
+	<!--
 	<tr>
 		<td> Company description: </td>
 		<td>{{ company.description }} </td>
 	</tr>
+	-->
 </table>
 
 <!-- <div> Company name: {{ company.name }} </div> 
