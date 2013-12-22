@@ -1,6 +1,7 @@
 from django.conf.urls import *
 from django.contrib import admin
 from companyapp.views import *
+from django.conf.urls.defaults import handler404
 
 # Uncomment the next two lines to enable the admin:
 admin.autodiscover()
@@ -12,3 +13,5 @@ urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
+
+handler404 = 'companyapp.views.server_error_404'

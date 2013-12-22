@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+<!-- 
+<DOCTYPE html>
+<html lang="en">
+  <head> -->
+    {% load staticfiles %}
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    
+  <style media="screen" type="text/css" href="css/half-slider.css">
+  	html, body {
+  	  height:100%;
+  	}
+  	.carousel {
+         		height:50%;
+  	}
+  	.item,
+  	.active,
+  	.carousel-inner {
+  		height:100%;
+  	}
+  	.fill {
+  		width:100%;
+  		height:100%;
+  		background-position: center;
+  		background-size: cover;
+  	}
+  	.section {
+  		margin: 50px 0;
+  	}
+  	footer {
+  		margin: 50px 0;
+  	}
+  </style>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <!-- WHY DOESN'T IT DROP WHEN I CLICK ON IT?! -->
+            <span class="icon-bar">Test1</span>
+            <span class="icon-bar">Test2</span>
+            <span class="icon-bar">Test3</span>
+          </button>
+    <!-- <a class="navbar-brand">BPSC Home Page</a> -->
+        </div>
+<!-- <div class="container"> <a href="#"><img class = "brand" src="http://placehold.it/269x50" alt="SparkCharger" /></a> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+
+            <!-- USER IS LOGGED IN -->
+            {% if user.is_authenticated %}
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            </li>  
+            <li class="hiddentab"><a href="/users/register"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {{user.username}}</a></li>           
+              <!--  TODO: Make username link to user profile -->
+            <!-- <li class="hiddentab"><a href="/users/register">Register</a></li> -->            
+            <li class="hiddentab"><a href="/users/logout">Friends</a></li>  <!-- TODO: Make this link to list of friends page -->
+            <li class="hiddentab"><a href="/users/logout">My Companies</a></li>  <!-- TODO: Make this link to list of followed companies -->
+            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>  
+
+            <!-- USER IS NOT LOGGED IN -->
+            {% else %}
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            <li class="hiddentab"><a href="/users/login">
+              <!-- WHITE SPACES -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Log In</a>
+            </li>            
+            <li class="hiddentab"><a href="/users/register">Register</a></li>            
+            {% endif %}
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+  {% endblock %}
+
+  <!-- </head> -->
+
+  <!-- <body> -->
+  {% block content %}
+    
+
+    {% if user.is_authenticated %}
+    <h1> Welcome to Company Project, {{ user.username }}!</h1>
+    {% else %}
+    <h1> Welcome to Company Project !</h1>
+    {% endif %}
+
+    <!-- 
+    <form method="post">
+      {{ searchform.as_p }}
+      {% csrf_token %}
+      <input type="submit" value="Submit" />
+    </form> 
+    -->
+
+      <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Follow your favorite companies!</h2>
+          <p>
+            Follow a list of companies you are interested in learning more about, whether professionally or based on interest. Understand what products they offer, the industries they operate in, and what job opportunities they offer.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Document your company encounters!</h2>
+          <p>
+            After interviews, networking events, or recruiting sessions, save your notes for future reference. Remember who you talked to, what you talked about, and how you liked the company.
+          </p>
+       </div>
+        <div class="col-md-4">
+          <h2>Share company information with friends!</h2>
+          <p>
+            See who your friends have contacted and what they experienced at different companies. Learn from their interview questions and networking experiences.
+          </p>
+        </div>
+      </div>
+
+      
+    </div> <!-- /container -->
+
+      <hr>
+      
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>© Copyright Vincent Tian 
+              &middot <a href="https://www.facebook.com/vtian">     Facebook    </a> 
+              &middot <a href="https://www.linkedin.com/in/vtian">  LinkedIn    </a> 
+              &middot <a href="https://github.com/vincenttian">     GitHub      </a> 
+            </p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src=""http://www.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css""></script>
+  {% endblock %}
+
+  <!-- </body> -->
+</html>
+

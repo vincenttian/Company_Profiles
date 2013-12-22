@@ -57,7 +57,7 @@
 
             <li class="hiddentab"><a href="/users/login">
               <!-- WHITE SPACES -->
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Log In</a>
             </li>            
             <li class="hiddentab"><a href="/users/register">Register</a></li>            
@@ -77,9 +77,9 @@
 	<ul class="nav nav-list">
 		<form method="post">
 			{% csrf_token %}
-		    {{ searchform.as_p }}
-		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		    <input type="submit" value="Submit" />
+		    <!-- {{ searchform.as_p }} -->
+		    {{ searchform.company_search }}
+		    <input type="submit" value="Search!" />
 		</form>
 	</u1>
 </div>
@@ -87,7 +87,7 @@
 <h1> {{ company.name }} </h1>
 
 <table class="table table-striped table-bordered">
-	<caption> Basic Information </caption>
+	<caption> Basic Information from Crunchbase </caption>
 	<tr>
 		<td> Company name: </td>
 		<td> {{ company.name }} </td>
@@ -102,7 +102,10 @@
 	</tr>
 	<tr>
 		<td> Company CEO: </td>
-		<td>{{ company.CEO }} </td>
+		<!-- <td>{{ company.CEO }} </td> -->
+		<td> 
+			<a href="http://en.wikipedia.org/wiki/" + {{ company.CEO }}> {{ company.CEO }} </a> 
+		</td>
 	</tr>
 	<tr>
 		<td> Company size: </td>
@@ -183,7 +186,12 @@
 
 <!-- <div> Company products: {{ company.products }} </div> -->
 
-<div> Company overview: {{ company.overview }} </div>
+<!-- <div> Company overview: <br></br> {{ company.overview|safe }} </div> -->
+<table class="table table-striped">
+	<caption> Overview </caption>
+	<td> Company overview: </td>
+	<td>{{ company.overview|safe }} </td>
+</table>
 
 <br></br>
 
