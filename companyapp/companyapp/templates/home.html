@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
 
     <!-- Add custom CSS here -->
     
@@ -86,15 +87,14 @@
             <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
             <li class="hiddentab"><a href="/company/google">Google</a></li>
             <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
-      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
             <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
-
-            <li class="hiddentab"><a href="/users/login">
-              <!-- WHITE SPACES -->
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              Log In</a>
-            </li>            
-            <li class="hiddentab"><a href="/users/register">Register</a></li>            
+            
+            <!-- <div class="right-container"> -->
+              <li class="hiddentab"><a href="/users/login">
+                Log In</a>
+              </li>            
+              <li class="hiddentab"><a href="/users/register">Register</a></li>
+            <!-- </div> -->
             {% endif %}
 
           </ul>

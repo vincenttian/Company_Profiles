@@ -1,11 +1,11 @@
 import os
 # Django settings for companies project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    ('Vincent Tian', 'vincenttian16@gmail.com'),
+    # ('Vincent Tian', 'vincenttian16@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -17,13 +17,12 @@ if "IS_STAGING" in os.environ or "IS_PRODUCTION" in os.environ:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'company_db',                      # Or path to database file if using sqlite3.
-            # The following settings are not used with sqlite3:
+            'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'NAME': 'company_db',  # Or path to database file if using sqlite3. # The following settings are not used with sqlite3:
             'USER': 'vincent',
-            'PASSWORD': 'company',
-            'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-            'PORT': '',                      # Set to empty string for default.
+            'PASSWORD': 'testtest123',
+            'HOST': 'localhost',    # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+            'PORT': '',    # Set to empty string for default.
         }
     }
 
@@ -107,6 +106,18 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+)
+
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.request',
+    'django.core.context_processors.static',
+    'django.core.context_processors.tz',
+    'django.contrib.messages.context_processors.messages',
 )
 
 ROOT_URLCONF = 'companyapp.urls'

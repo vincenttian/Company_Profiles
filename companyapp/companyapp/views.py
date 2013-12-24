@@ -36,3 +36,6 @@ class CompanyView(DetailView):
 def home(request):
     return render(request, 'home.html')
 
+def server_error_404(request):
+    return render(request, '404.html')
+
