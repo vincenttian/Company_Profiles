@@ -8,11 +8,9 @@ import pprint
 import requests
 from xml.etree import ElementTree as ET
 from django.core.management.base import BaseCommand, CommandError
-from companyapp.companyapp.models import *
 from functools import partial
 from BeautifulSoup import BeautifulSoup
 import re
-from companyapp.companyapp.management.commands.company_api import *
 
 consumer_key    =   '452p27539u5f'
 consumer_secret =   '3q1iiaeQph2wRH4M'
@@ -34,11 +32,14 @@ GLASSDOOR_URL = ""
 def get_auth():
 	consumer = oauth.Consumer(consumer_key, consumer_secret)
 	client = oauth.Client(consumer)
+
+
 	try:
 			filehandle = open(config_file)
+			print "Gets here?"
 	except IOError as e:
 			filehandle = open(config_file,"w")
-			print("We don't have a service.dat file, so we need to get access tokens!");
+			print "We don't have a service.dat file, so we need to get access tokens!"
 			content = make_request(client,request_token_url,{},"Failed to fetch request token","POST")
 			request_token = dict(urlparse.parse_qsl(content))
 			print "Go to the following link in your browser:"
@@ -53,8 +54,7 @@ def get_auth():
 			token = oauth.Token(key=access_token['oauth_token'],secret=access_token['oauth_token_secret'])
 			client = oauth.Client(consumer, token)
 			simplejson.dump(access_token,filehandle)
-	else:
-			print filehandle
+	else:			
 			config = simplejson.load(filehandle)
 			if ("oauth_token" in config and "oauth_token_secret" in config):
 					token = oauth.Token(config['oauth_token'],config['oauth_token_secret'])
@@ -360,233 +360,202 @@ def parse(soup, raw=False):
 		return json.dumps(data)
 	return data
 
-# COMPANY LISTS HERE
-# companies = ['delta-air-lines']
-# COMPANIES FOR TESTING
-# companies = ['microsoft', 'google', 'amazon', 'ebay', 'linkedin', 'yahoo', 'asana', 'flipboard']
 
-# BIG LIST OF COMPANIES THAT WORK:
-companies = \
-['23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk',\
- 'box', 'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
- 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', 'Google', \
- 'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
- 'Juniper Networks', 'Klout', \
- 'Linkedin', 'Magoosh', 'marin software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir-Technologies', \
- 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', 'riot games', 'riverbed technology', \
- 'Salesforce', 'Samsung-Electronics', 'Shoretel', 'Shutterfly', 'Skype', \
- 'Snapchat', 'Spotify', 'Square', 'sun microsystems', 'Symantec', 'Tesla-Motors', 'Texas Instruments', \
- 'Twitter', 'tubemogul', 'Verizon', 'VMWare', 'Western Digital', \
- 'Workday', 'Yahoo', 'yelp'
-]
+# BEGIN VINCENT'S COMPANY API
+def company_api(company, api, data):
 
+	"""
+	To Use this API, set:
 
-class Command(BaseCommand):
-	help = 'Puts all the company information in the database'
+		company = string of the name of the company you want information open
 
-	def set_database(self):
+		api = string of the API that you want to use to get information: choose from
+			1. linkedin
+			2. crunchbase
+			3. glassdoor
 
-		for company in companies:
-			
-			company = company.lower()
-			name = company
+		data = string of the data you are interested in
 
-			print "Loading " + company + " into the database"
+			For linkedin, there is
+				1. company_type
+				2. description
+				3. employee_range
+				4. founded_year
+				5. industry
+				6. location
+				7. status
+				8. website_url
 
-			# GETS DATA FROM LINKEDIN API
-			# Get authorization set up and create the OAuth client
-			client = get_auth() 
-			response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
+			For crunchbase, there is 
+				1. acquisitions
+				2. blog_url
+				3. competition
+				4. description
+				5. email_address
+				6. funding_rounds
+				7. homepage_url
+				8. investments
+				9. milestones
+				10. number_employees
+				11. offices
+				12. overview
+				13. phone_number
+				14. company_staff
+				15. total_money_raised
+				16. twitter_username
+
+			For glassdoor, there is 
+				1. ceo
+				2. meta
+				3. salary
+				4. satisfaction
+	"""
+
+	api = api.lower()
+	company = company.lower()
+
+	# GET INFORMATION FROM LINKEDIN
+	if api == 'linkedin':
+		
+		# GETS DATA FROM LINKEDIN API
+		# Get authorization set up and create the OAuth client
+		client = get_auth() 
+		response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
+		d1 = json.loads(response)
+		try:
 			d1 = json.loads(response)
-			try:
-				d1 = json.loads(response)
-			except:
-				d1 = None
-			pprint.pprint(d1)
+		except:
+			return "Sorry. The LinkedIn API could not find information for company " + company
+		
+		"""
+		Returns a JSON object of all information about company provided by linkedin
+		"""
+		if data == 'all':
+			return d1
 
-			# GETS DATA FROM CRUNCHBASE API
-			r = requests.get(CRUNCHBASE_URL_1 + company + CRUNCHBASE_URL_2)
-			data = r.text
-			try:
-				d2 = json.loads(data)
-			except:
-				d2 = None
-			# d2 = company_api(company, 'crunchbase', 'all')			
-			# pprint.pprint(d2)
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
-			# GETS DATA FROM GLASSDOOR SCRAPING
-			x = get(company)
-			x_json = x.json()
-			d3 = json.loads(x_json)
-			# d3 = company_api(company, 'glassdoor', 'all')
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
-			try:
-				sal = d3["salary"]
-			except:
-				company = company + ".com"
-				x = get(company)
-				x_json = x.json()
-				d3 = json.loads(x_json)
-				try:
-					sal = d3["salary"]
-				except:
-					sal = None
+	# GET INFORMATION FROM CRUNCHBASE
+	if api == 'crunchbase':
 
-			company = Company()
-			company.name = name
+		# DATA FROM CRUNCHBASE
+		r = requests.get(CRUNCHBASE_URL_1 + company + CRUNCHBASE_URL_2)
+		data = r.text
+		try:
+			d2 = json.loads(data)
+		except:
+			return "Sorry. The Crunchbase API could not find information for company " + company
 
-			try:
-				company.ticker = d2["ipo"]["stock_symbol"]
-			except:
-				company.ticker = "Not publicly traded"
+		"""
+		Returns a JSON object of all information about company provided by crunchbase
+		"""
+		if data == 'all':
+			return d2
 
-			if d2["homepage_url"] == None:
-				company.website = "Could not find homepage"
-			else:
-				company.website = d2["homepage_url"]
-			
-			if d2 == None:
-				pass
-			else:
-				try:
-					company.CEO = d2["relationships"][0]["person"]["first_name"] + " " + d2["relationships"][0]["person"]["last_name"]
-				except:
-					company.CEO = "Who is the CEO?" 
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
-			if d2["number_of_employees"] == None:
-				company.size = "Could not find company size"
-			else:
-				company.size = d2["number_of_employees"]
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
-			try:
-				if d2["ipo"]["pub_year"] != None:
-					company.company_type = "Public company"
-				else:
-					company.company_type = "Private company"
-			except:
-				company.company_type = "Private company"
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
 
-			try:
-				company.founded = str(d2["founded_year"])
-			except:
-				company.founded = "Could not find founded year"
-			
-			if d2 == None:
-				pass
-			else:
-				try:
-					company.IPO_year = str(d2["ipo"]["pub_year"])
-				except:
-					company.IPO_year = "Has not IPO'ed yet"
-			
-			office_locations = {}
-			counter = 0
-			for office in d2["offices"]:
-				if office["state_code"] != None:
-					office_locations[counter] = (office["city"], office["state_code"])
-				else:
-					office_locations[counter] = (office["city"], office["country_code"])
-				counter += 1
-			company.location = office_locations
+	# GET INFORMATION FROM GLASSDOOR
+	if api == 'glassdoor':
+	
+		# GETS DATA FROM GLASSDOOR SCRAPING
+		x = get(company)
+		x_json = x.json()
+		d3 = json.loads(x_json)
 
-			if d2["category_code"] == None:
-				company.industry = "Could not find industry"
-			else:
-				company.industry = d2["category_code"]
+		"""
+		Returns a JSON object of all information about company provided by linkedin
+		"""
+		if data == 'all':
+			return d3
 
-			# try:
-			if d2["description"] == None:
-				company.description = "No available description"
-			else:
-				company.description = d2["description"]
-			# except:
-			# 	company.description = "No description"
-			
-			# COMPETITORS
-			competitor_list = {}
-			count = 0
-			try:
-				for competitor in d2["competitions"]:
-					competitor_list[count] = str(competitor["competitor"]["name"])
-					count += 1
-				company.competitors = str(competitor_list)
-			except:
-				company.competitors = "No competitors"
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
+
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
+
+		"""
+		Returns a string that contains the 
+		"""
+		if data == '':
+			return
+
+# TESTING API
+if __name__ == "__main__":
+	print "Initial Test"
+
+	company = "23andme"
 
 
-			# ACQUISITIONS
-			acquisition_list = {}
-			count = 0
-			try:
-				for acquisition in d2["acquisitions"]:
-					acquisition_list[count] = acquisition["company"]["name"]
-					count += 1
-				company.acquisitions = str(acquisition_list)
-			except:
-				company.acquisitions = "No acquisitions"
+	# CRUNCHBASEEE -----------------------------------	
+	# d2 = company_api(company, 'crunchbase', 'all')			
+	# pprint.pprint(d2)
 
-			# INVESTMENTS
-			investment_list = {}
-			count = 0
-			try:
-				for investment in d2["investments"]:
-					investment_list[count] = [investment["funding_round"]["company"]["name"], investment["funding_round"]["raised_amount"], investment["funding_round"]["funded_year"]]
-					count += 1
-				company.investments = str(investment_list)
-			except:
-				company.investments = "No investments"
+	r = requests.get(CRUNCHBASE_URL_1 + company + CRUNCHBASE_URL_2)
+	data = r.text
+	try:
+		d2 = json.loads(data)
+	except:
+		print "Sorry"
+	pprint.pprint(d2)
 
-			# PRODUCTS
-			product_list = {}
-			count = 0
-			try:
-				for product in d2["products"]:
-					prod = Product()
-					prod.name = str(product["name"])
-					prod.save()
-					product_list[count] = prod
-					count += 1
-				company.products = str(product_list)
-			except:
-				company.products = "No products"
+	# GLASSDOORRR -----------------------------------	
+	# x = get(company)
+	# x_json = x.json()
+	# d3 = json.loads(x_json)
+	# print d3["salary"]
+	# pprint.pprint(d3)
 
-			if d2["overview"] != None:
-				company.overview = d2["overview"]
-			else:
-				company.overview = "No overview"
+	# LINKEDINNNN -----------------------------------	
+	# client = get_auth() 
+	# response = make_request(client, LINKEDIN_URL_1 + company + LINKEDIN_URL_2, {"x-li-format":'json'})
+	# d1 = json.loads(response)
+	# try:
+	# 	d1 = json.loads(response)
+	# except:
+	# 	print "Sorry. The LinkedIn API could not find information for company " + company
+	# pprint.pprint(d1)
+	
 
-			# SALARIES
-			salary_list = {}
-			count = 0
-			if sal == None:
-				salary = Salary()
-				salary.company_name = company
-				salary.position = "Could not find"  
-				# salary.ranges = "Could not find" 
-				# salary.mean = "Could not find" 
-				# salary.samples = "Could not find" 
-				salary.url = GLASSDOOR_URL
-				company.salaries = str(salary)
-				company.save()
-			else:
-				for sa in sal:
-					salary = Salary()
-					salary.company_name = company
-					salary.position = str(sa["position"]) 
-					salary.ranges = str(sa["range"])
-					salary.mean = str(sa["mean"])
-					salary.samples = str(sa["samples"])
-					salary.url = GLASSDOOR_URL
-					salary.save()
-					salary_list[count] = salary
-					count += 1
-				company.salaries = str(salary_list)
-				company.save()
-			print "Successfully loaded " + name + " into the database" 
 
-	def handle(self, *args, **options):
-		self.set_database()
 
 
 
