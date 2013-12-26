@@ -33,8 +33,13 @@ class CompanyView(DetailView):
             return redirect('/company/' + search + '/') # Redirect after POST
         return self.render_to_response(context) 
 
+# NEED TO MAKE HOME REQUEST NOT JUST SERVING A STATIC PAGE
 def home(request):
     return render(request, 'home.html')
+
+# class HomeView(View):
+    # model = Company
+    # return render(request, 'home.html')
 
 def server_error_404(request):
     return render(request, '404.html')
