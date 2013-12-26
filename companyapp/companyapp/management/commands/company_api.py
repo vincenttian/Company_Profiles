@@ -66,7 +66,7 @@ def company_api_function(company, api, data):
 		d1 = json.loads(response)
 		try:
 			d1 = json.loads(response)
-		except:
+		except Exception:
 			return "Sorry. The LinkedIn API could not find information for company " + company
 		
 		"""
@@ -79,25 +79,37 @@ def company_api_function(company, api, data):
 		Returns a string that contains the company type: private or public.
 		"""
 		if data == 'company_type':
-			return d1["companyType"]["name"]
+			try: 
+				return d1["companyType"]["name"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains a short description of the company.
 		"""
 		if data == 'description':
-			return d1["description"]
+			try:
+				return d1["description"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains an approximate range for number of employees.
 		"""
 		if data == 'employee_range':
-			return d1["employeeCountRange"]["name"]
+			try:
+				return d1["employeeCountRange"]["name"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns an integer that contains the year the company was founded.
 		"""
 		if data == 'founded_year':
-			return d1["foundedYear"]
+			try:
+				return d1["foundedYear"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains the industries the company is involved with.
@@ -107,7 +119,10 @@ def company_api_function(company, api, data):
          u'values': [{u'code': u'12', u'name': u'Biotechnology'}]}
 		"""
 		if data == 'industry':
-			return d1["industries"]
+			try:
+				return d1["industries"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains the locations of the company.
@@ -121,19 +136,28 @@ def company_api_function(company, api, data):
                                       u'phone1': u'650.938.6300'}}]}
 		"""
 		if data == 'location':
-			return d1["locations"]
+			try:
+				return d1["locations"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the status of the company: operating or not.
 		"""
 		if data == 'status':
-			return d1["status"]["name"]
+			try:
+				return d1["status"]["name"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the website url of the company.
 		"""
 		if data == 'website_url':
-			return d1["websiteUrl"]
+			try:
+				return d1["websiteUrl"]
+			except Exception:
+				return "Sorry. The LinkedIn API could not find " + data + "for company " + company
 
 	# GET INFORMATION FROM CRUNCHBASE
 	if api == 'crunchbase':
@@ -168,13 +192,19 @@ def company_api_function(company, api, data):
 	        u'term_code': None}]
 		"""
 		if data == 'acquisitions':
-			return d2["acquisitions"]
+			try:
+				return d2["acquisitions"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the blog url of the company
 		"""
 		if data == 'blog_url':
-			return d2["blog_url"]
+			try:
+				return d2["blog_url"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains the competitors of the comapny 
@@ -190,19 +220,28 @@ def company_api_function(company, api, data):
                                     u'permalink': u'aibiotech'}}]
 		"""
 		if data == 'competition':
-			return d2["competitions"]
+			try:
+				return d2["competitions"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains a description of the company
 		"""
 		if data == 'description':
-			return d2["description"]
+			try:
+				return d2["description"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the company email address
 		"""
 		if data == 'email_address':
-			return d2["email_address"]
+			try:
+				return d2["email_address"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON Object that contains the funding rounds of a company
@@ -235,19 +274,28 @@ def company_api_function(company, api, data):
 	          u'source_url': u'http://23andme.com/press.html'}
 		"""
 		if data == 'funding_rounds':
-			return d2["funding_rounds"]
+			try:
+				return d2["funding_rounds"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the company homepage url 
 		"""
 		if data == 'homepage_url':
-			return d2["homepage_url"]
+			try:
+				return d2["homepage_url"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON Object that contains the company investments
 		"""
 		if data == 'investments':
-			return d2["investments"]
+			try:
+				return d2["investments"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON Object that contains company milestones
@@ -269,13 +317,19 @@ def company_api_function(company, api, data):
 	          u'stoned_year': 2008}]
 		"""
 		if data == 'milestones':
-			return d2["milestones"]
+			try:
+				return d2["milestones"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the number of employees
 		"""
 		if data == 'number_employees':
-			return d2["number_of_employees"]
+			try:
+				return d2["number_of_employees"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON Object that contains the company offices 
@@ -292,19 +346,28 @@ def company_api_function(company, api, data):
            u'zip_code': u'94042'}]
 		"""
 		if data == 'offices':
-			return d2["offices"]
+			try:
+				return d2["offices"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the 
 		"""
 		if data == 'overview':
-			return d2["overview"]
+			try:
+				return d2["overview"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the company overview
 		"""
 		if data == 'phone_number':
-			return d2["phone_number"]
+			try:
+				return d2["phone_number"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON Object that contains the company staff 
@@ -318,19 +381,28 @@ def company_api_function(company, api, data):
         }
 		"""
 		if data == 'company_staff':
-			return d2["relationships"]
+			try:
+				return d2["relationships"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the total money raised 
 		"""
 		if data == 'total_money_raised':
-			return d2["total_money_raised"]
+			try:
+				return d2["total_money_raised"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 		"""
 		Returns a string that contains the twitter username 
 		"""
 		if data == 'twitter_username':
-			return d2["twitter_username"]
+			try:
+				return d2["twitter_username"]
+			except Exception:
+				return "Sorry. The Crunchbase API could not find " + data + "for company " + company
 
 	# GET INFORMATION FROM GLASSDOOR
 	if api == 'glassdoor':
@@ -338,7 +410,10 @@ def company_api_function(company, api, data):
 		# GETS DATA FROM GLASSDOOR SCRAPING
 		x, GLASSDOOR_URL = get(company)
 		x_json = x.json()
-		d3 = json.loads(x_json)
+		try:
+			d3 = json.loads(x_json)
+		except Exception:
+			"Sorry. The Glassdoor API could not find information for company " + company			
 
 		"""
 
@@ -362,7 +437,10 @@ def company_api_function(company, api, data):
           u'reviews': 0}
 		"""
 		if data == 'ceo':
-			return d3["ceo"]
+			try:
+				return d3["ceo"]
+			except Exception:
+				return "Sorry. The Glassdoor API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains information including competitors, year founded,
@@ -384,7 +462,10 @@ def company_api_function(company, api, data):
            u'website': u'www.23andme.com'}}
 		"""
 		if data == 'meta':
-			return d3["meta"]
+			try:
+				return d3["meta"]
+			except Exception:
+				return "Sorry. The Glassdoor API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains salary information 
@@ -404,8 +485,10 @@ def company_api_function(company, api, data):
         }
 		"""
 		if data == 'salary':
-			return d3["salary"]
-
+			try:
+				return d3["salary"]
+			except Exception:
+				return "Sorry. The Glassdoor API could not find " + data + "for company " + company
 
 		"""
 		Returns a JSON object that contains the satisfaction of employees
@@ -414,7 +497,10 @@ def company_api_function(company, api, data):
 		{ u'satisfaction': {u'ratings': 9, u'score': None }}
 		"""
 		if data == 'satisfaction':
-			return d3["satisfaction"]
+			try:
+				return d3["satisfaction"]
+			except Exception:
+				return "Sorry. The Glassdoor API could not find " + data + "for company " + company
 
 # TESTING API
 if __name__ == "__main__":
