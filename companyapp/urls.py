@@ -1,7 +1,7 @@
 from django.conf.urls import *
 from django.contrib import admin
-from companyapp.views import *
-from django.conf.urls.defaults import handler404
+from companyapp.views import server_error_404, home, HomeView
+from django.conf.urls.defaults import handler404, handler500
 
 # Uncomment the next two lines to enable the admin:
 admin.autodiscover()
@@ -16,3 +16,4 @@ urlpatterns = patterns('',
 )
 
 handler404 = 'companyapp.views.server_error_404'
+handler500 = 'companyapp.companyapp.views.server_error_500'
