@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block head %}
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <!-- WHY DOESN'T IT DROP WHEN I CLICK ON IT?! -->
+            <span class="icon-bar">Test1</span>
+            <span class="icon-bar">Test2</span>
+            <span class="icon-bar">Test3</span>
+          </button>
+    <!-- <a class="navbar-brand">BPSC Home Page</a> -->
+        </div>
+<!-- <div class="container"> <a href="#"><img class = "brand" src="http://placehold.it/269x50" alt="SparkCharger" /></a> -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            	
+            <!-- USER IS LOGGED IN -->
+            {% if user.is_authenticated %}
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            </li>  
+            <li class="hiddentab"><a href="/users/register"> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              {{user.username}}</a></li>           
+              <!--  TODO: Make username link to user profile -->
+            <!-- <li class="hiddentab"><a href="/users/register">Register</a></li> -->            
+            <li class="hiddentab"><a href="/users/logout">Friends</a></li>  <!-- TODO: Make this link to list of friends page -->
+            <li class="hiddentab"><a href="/users/logout">My Companies</a></li>  <!-- TODO: Make this link to list of followed companies -->
+            <li class="hiddentab"><a href="/users/logout">Log Out</a></li>  
+
+            <!-- USER IS NOT LOGGED IN -->
+            {% else %}
+            <li class="hiddentab"><a href="/">Home</a></li>
+            <li class="hiddentab"><a href="/company/yahoo">Yahoo</a></li>
+            <li class="hiddentab"><a href="/company/microsoft">Microsoft</a></li>
+            <li class="hiddentab"><a href="/company/google">Google</a></li>
+            <li class="hiddentab"><a href="/company/amazon">Amazon</a></li>
+      <!--    <li class="hiddentab"><a href="/company/ebay_inc">Ebay</a></li>-->            
+            <li class="hiddentab"><a href="/company/linkedin">Linkedin</a></li>
+
+            <li class="hiddentab"><a href="/users/login">
+              <!-- WHITE SPACES -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Log In</a>
+            </li>            
+            <li class="hiddentab"><a href="/users/register">Register</a></li>            
+            {% endif %}
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+{% endblock %}
+
+{% block content %}
+
+<h1> Company Project </h1>
+<div class="well sidebar-nav">
+	<ul class="nav nav-list">
+		<form method="post">
+			{% csrf_token %}
+		    <!-- {{ searchform.as_p }} -->
+		    {{ searchform2.company_search }}
+		    <input type="submit" value="Search!" />
+		</form>
+	</u1>
+</div>
+
+<h1> {{ company.name }} </h1>
+
+
+
+<br></br>
+
+{% endblock %}
