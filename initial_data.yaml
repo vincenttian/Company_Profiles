@@ -1,0 +1,1326 @@
+- fields: {name: Amazon EC2}
+  model: companyapp.product
+  pk: 1
+- fields: {name: Amazon S3}
+  model: companyapp.product
+  pk: 2
+- fields: {name: Amazon Mechanical Turk}
+  model: companyapp.product
+  pk: 3
+- fields: {name: Amazon Fresh}
+  model: companyapp.product
+  pk: 4
+- fields: {name: Amazon Kindle}
+  model: companyapp.product
+  pk: 5
+- fields: {name: Amazon Video on Demand}
+  model: companyapp.product
+  pk: 6
+- fields: {name: Amazon Unbox}
+  model: companyapp.product
+  pk: 7
+- fields: {name: Amazon EBS}
+  model: companyapp.product
+  pk: 8
+- fields: {name: Amazon BookSurge}
+  model: companyapp.product
+  pk: 9
+- fields: {name: Amazon Web Services}
+  model: companyapp.product
+  pk: 10
+- fields: {name: Amazon Kindle 2}
+  model: companyapp.product
+  pk: 11
+- fields: {name: Amazon Elastic MapReduce}
+  model: companyapp.product
+  pk: 12
+- fields: {name: Amazon Kindle DX}
+  model: companyapp.product
+  pk: 13
+- fields: {name: Kindle for iPhone}
+  model: companyapp.product
+  pk: 14
+- fields: {name: Amazon Studios}
+  model: companyapp.product
+  pk: 15
+- fields: {name: A2Z Development}
+  model: companyapp.product
+  pk: 16
+- fields: {name: A9.com}
+  model: companyapp.product
+  pk: 17
+- fields: {name: Alexa Internet}
+  model: companyapp.product
+  pk: 18
+- fields: {name: Audible.com}
+  model: companyapp.product
+  pk: 19
+- fields: {name: IMDb}
+  model: companyapp.product
+  pk: 20
+- fields: {name: Lovefilm}
+  model: companyapp.product
+  pk: 21
+- fields: {name: Woot}
+  model: companyapp.product
+  pk: 22
+- fields: {name: Quidsi}
+  model: companyapp.product
+  pk: 23
+- fields: {name: Touchco}
+  model: companyapp.product
+  pk: 24
+- fields: {name: SnapTell}
+  model: companyapp.product
+  pk: 25
+- fields: {name: Lexcycle}
+  model: companyapp.product
+  pk: 26
+- fields: {name: CustomFlix}
+  model: companyapp.product
+  pk: 27
+- fields: {name: Tastemakers}
+  model: companyapp.product
+  pk: 28
+- fields: {name: Shopbop}
+  model: companyapp.product
+  pk: 29
+- fields: {name: Fabric.com}
+  model: companyapp.product
+  pk: 30
+- fields: {name: Without A Box}
+  model: companyapp.product
+  pk: 31
+- fields: {name: Mobipocket.com}
+  model: companyapp.product
+  pk: 32
+- fields: {name: BookSurge}
+  model: companyapp.product
+  pk: 33
+- fields: {name: CDNOW}
+  model: companyapp.product
+  pk: 34
+- fields: {name: Accept.com}
+  model: companyapp.product
+  pk: 35
+- fields: {name: Alexa}
+  model: companyapp.product
+  pk: 36
+- fields: {name: Exchange.com}
+  model: companyapp.product
+  pk: 37
+- fields: {name: Bookpages}
+  model: companyapp.product
+  pk: 38
+- fields: {name: Amazon Route 53}
+  model: companyapp.product
+  pk: 39
+- fields: {name: Kindle Fire}
+  model: companyapp.product
+  pk: 40
+- fields: {name: Kindle Touch}
+  model: companyapp.product
+  pk: 41
+- fields: {name: iPhone}
+  model: companyapp.product
+  pk: 42
+- fields: {name: MobileMe}
+  model: companyapp.product
+  pk: 43
+- fields: {name: iPhone 3G}
+  model: companyapp.product
+  pk: 44
+- fields: {name: App Store}
+  model: companyapp.product
+  pk: 45
+- fields: {name: iTunes}
+  model: companyapp.product
+  pk: 46
+- fields: {name: OS X}
+  model: companyapp.product
+  pk: 47
+- fields: {name: Apple TV}
+  model: companyapp.product
+  pk: 48
+- fields: {name: Safari}
+  model: companyapp.product
+  pk: 49
+- fields: {name: iPhone 3GS}
+  model: companyapp.product
+  pk: 50
+- fields: {name: Magic Mouse}
+  model: companyapp.product
+  pk: 51
+- fields: {name: DigitalColor Meter}
+  model: companyapp.product
+  pk: 52
+- fields: {name: iPad}
+  model: companyapp.product
+  pk: 53
+- fields: {name: iPod}
+  model: companyapp.product
+  pk: 54
+- fields: {name: Final Cut Studio}
+  model: companyapp.product
+  pk: 55
+- fields: {name: Logic Studio}
+  model: companyapp.product
+  pk: 56
+- fields: {name: iWork}
+  model: companyapp.product
+  pk: 57
+- fields: {name: iLife}
+  model: companyapp.product
+  pk: 58
+- fields: {name: Aperture}
+  model: companyapp.product
+  pk: 59
+- fields: {name: iPhone 4}
+  model: companyapp.product
+  pk: 60
+- fields: {name: Ping}
+  model: companyapp.product
+  pk: 61
+- fields: {name: MacBook Air}
+  model: companyapp.product
+  pk: 62
+- fields: {name: iPad 2}
+  model: companyapp.product
+  pk: 63
+- fields: {name: iCloud}
+  model: companyapp.product
+  pk: 64
+- fields: {name: OS X Lion}
+  model: companyapp.product
+  pk: 65
+- fields: {name: iOS}
+  model: companyapp.product
+  pk: 66
+- fields: {name: iAd}
+  model: companyapp.product
+  pk: 67
+- fields: {name: iPhone 4S}
+  model: companyapp.product
+  pk: 68
+- fields: {name: Siri}
+  model: companyapp.product
+  pk: 69
+- fields: {name: iPad 2012}
+  model: companyapp.product
+  pk: 70
+- fields: {name: iPhone 5}
+  model: companyapp.product
+  pk: 71
+- fields: {name: Box}
+  model: companyapp.product
+  pk: 72
+- fields: {name: Box $rev}
+  model: companyapp.product
+  pk: 73
+- fields: {name: DropBox}
+  model: companyapp.product
+  pk: 74
+- fields: {name: eBay Marketplace}
+  model: companyapp.product
+  pk: 75
+- fields: {name: eBay Classifieds}
+  model: companyapp.product
+  pk: 76
+- fields: {name: eBay Mobile Application}
+  model: companyapp.product
+  pk: 77
+- fields: {name: eBay Desktop}
+  model: companyapp.product
+  pk: 78
+- fields: {name: Symmetrix}
+  model: companyapp.product
+  pk: 79
+- fields: {name: Eventbrite}
+  model: companyapp.product
+  pk: 80
+- fields: {name: At The Door}
+  model: companyapp.product
+  pk: 81
+- fields: {name: At The Door Card Reader}
+  model: companyapp.product
+  pk: 82
+- fields: {name: At The Door Ticket Printer}
+  model: companyapp.product
+  pk: 83
+- fields: {name: Eventbrite Mobile App}
+  model: companyapp.product
+  pk: 84
+- fields: {name: Evernote}
+  model: companyapp.product
+  pk: 85
+- fields: {name: Evernote Peek}
+  model: companyapp.product
+  pk: 86
+- fields: {name: Evernote Hello}
+  model: companyapp.product
+  pk: 87
+- fields: {name: Evernote Food}
+  model: companyapp.product
+  pk: 88
+- fields: {name: Evernote Clearly}
+  model: companyapp.product
+  pk: 89
+- fields: {name: Facebook Platform}
+  model: companyapp.product
+  pk: 90
+- fields: {name: Facebook News Feed}
+  model: companyapp.product
+  pk: 91
+- fields: {name: Facebook Chat}
+  model: companyapp.product
+  pk: 92
+- fields: {name: Facebook Connect}
+  model: companyapp.product
+  pk: 93
+- fields: {name: Facebook Mobile}
+  model: companyapp.product
+  pk: 94
+- fields: {name: Facebook}
+  model: companyapp.product
+  pk: 95
+- fields: {name: Facebook Lite}
+  model: companyapp.product
+  pk: 96
+- fields: {name: Facebook Places}
+  model: companyapp.product
+  pk: 97
+- fields: {name: HP Upline}
+  model: companyapp.product
+  pk: 98
+- fields: {name: HP TouchPad}
+  model: companyapp.product
+  pk: 99
+- fields: {name: HP SlatePro Tablet}
+  model: companyapp.product
+  pk: 100
+- fields: {name: HP ENVY TouchSmart Ultrabook Laptop}
+  model: companyapp.product
+  pk: 101
+- fields: {name: HP Deskjet Printer}
+  model: companyapp.product
+  pk: 102
+- fields: {name: Scoreboard}
+  model: companyapp.product
+  pk: 103
+- fields: {name: Countdown}
+  model: companyapp.product
+  pk: 104
+- fields: {name: Lotus Notes}
+  model: companyapp.product
+  pk: 105
+- fields: {name: Lotus Sametime}
+  model: companyapp.product
+  pk: 106
+- fields: {name: Lotus Quickr}
+  model: companyapp.product
+  pk: 107
+- fields: {name: Lotus Connections}
+  model: companyapp.product
+  pk: 108
+- fields: {name: Jawbone}
+  model: companyapp.product
+  pk: 109
+- fields: {name: Jambox}
+  model: companyapp.product
+  pk: 110
+- fields: {CEO: Anne Wojcicki, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''CureTogether''}',
+    company_type: Private company, competitors: '{0: ''GenePartner'', 1: ''ScientificMatch'',
+      2: ''Navigenics'', 3: ''AIBioTech''}', description: human genome indexing/application,
+    founded: '2006', industry: biotech, investments: '{}', location: '{0: (u''Mountain
+      View'', u''CA'')}', overview: '<p>A startup founded by Anne Wojcicki, the wife
+      of Google co-founder Sergey Brin, 23andMe has plans to make the human genome
+      searchable. Brin, along with Google, gave 23andMe $3.9 million as part of a
+      series A in May of 2007.</p>
+
+
+      <p>The company was named after the number of chromosome pairs in humans. They
+      aim to help people understand what their genes mean by indexing them and highlighting
+      significant findings. </p>
+
+
+      <p>23andMe allows its clients/users to study their ancestry, genealogy, and
+      inherited traits. The company also markets to researchers and scientists, for
+      whom they provide neatly categorized and easily searchable data.</p>
+
+
+      <p>One reason the Google investment in 23andMe made sense, was that this company
+      could enable the search giant to index another facet of the world&#8217;s information.
+      With the Biotech and Health Care industries growing rapidly, 23andMe could help
+      Google get and maintain a market hold in these already multi-billion dollar
+      areas.</p>', products: '{}', salaries: 'Could not find 23andme   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=23andme',
+    size: '80', ticker: Not publicly traded, website: 'http://23andme.com'}
+  model: companyapp.company
+  pk: 23andme
+- fields: {CEO: Jeff Bezos, IPO_year: '1997', acquisitions: '{0: u''dpreview'', 1:
+      u''Alexa'', 2: u''Fabric.com'', 3: u''Audible'', 4: u''AbeBooks'', 5: u''IMDB'',
+      6: u''Reflexive Entertainment'', 7: u''Shelfari'', 8: u''Lexcycle'', 9: u''SnapTell'',
+      10: u''Zappos'', 11: u''Shelfari'', 12: u''Brilliance Audio'', 13: u''Without
+      A Box'', 14: u''Reflexive Entertainment'', 15: u''Touchco'', 16: u''Woot'',
+      17: u''Quidsi'', 18: u''Bookpages'', 19: u''Accept.Com'', 20: u''Exchange.Com'',
+      21: u''CDNOW'', 22: u''BookSurge'', 23: u''Mobipocket.com'', 24: u''CustomFlix'',
+      25: u''Shopbop'', 26: u''LOVEFiLM'', 27: u''The Book Depository'', 28: u''Pushbutton'',
+      29: u''Quorus'', 30: u''Kiva Systems'', 31: u''Amie Street'', 32: u''TeachStreet'',
+      33: u''UpNext'', 34: u''IVONA Text-To-Speech'', 35: u''Goodreads'', 36: u''Goodreads'',
+      37: u''Liquavista'', 38: u''Screentech'', 39: u''BuyVIP'', 40: u''TextPayMe'',
+      41: u''GoPago''}', company_type: Public company, competitors: '{0: ''eMusic'',
+      1: ''PowerReviews'', 2: ''Bazaarvoice'', 3: ''Vudu'', 4: ''Sazze'', 5: ''Epinions'',
+      6: ''Infibeam'', 7: ''Elastra'', 8: ''Netflix'', 9: ''MyFab'', 10: ''MUBI'',
+      11: ''GoGrid'', 12: ''Ziippi'', 13: ''Alice.com'', 14: ''Pronto'', 15: ''Rakuten'',
+      16: ''Equallo''}', description: '', founded: '1994', industry: ecommerce, investments: '{0:
+      [u''delicious'', None, 2005], 1: [u''Wikia'', 10000000.0, 2006], 2: [u''Amie
+      Street'', None, 2007], 3: [u''Shelfari'', 1000000.0, 2007], 4: [u''Bill Me Later'',
+      None, 2007], 5: [u''Engine Yard'', 15000000.0, 2008], 6: [u''Elastra'', 12000000.0,
+      2008], 7: [u''Yieldex'', 8500000.0, 2009], 8: [u''The Talk Market'', None, 2008],
+      9: [u''BookTour'', 350000.0, 2009], 10: [u''Foodista'', 550000.0, 2009], 11:
+      [u''Animoto'', 4400000.0, 2009], 12: [u''Engine Yard'', 19000000.0, 2009], 13:
+      [u''Cirtas Systems'', 10000000.0, 2010], 14: [u''LivingSocial'', 183000000.0,
+      2010], 15: [u''Sonian'', 9000000.0, 2010], 16: [u''Animoto'', 25000000.0, 2011],
+      17: [u''LivingSocial'', 176000000.0, 2011], 18: [u''Songza'', 2000000.0, 2011],
+      19: [u''ParAccel'', None, 2011], 20: [u''LivingSocial'', 400000000.0, 2011],
+      21: [u''Videolicious'', 2250000.0, 2013], 22: [u''Videolicious'', 1400000.0,
+      2012], 23: [u''Songza'', 4700000.0, 2013]}', location: '{0: (u''Seattle'', u''WA'')}',
+    overview: '<p>Amazon.com, Inc. (AMZN), is a leading global Internet company and
+      one of the most trafficked Internet retail destinations worldwide. </p>
+
+
+      <p>Amazon is one of the first companies to sell products deep into the long
+      tail by housing them in numerous warehouses and distributing products from many
+      partner companies. Amazon directly sells or acts as a platform for the sale
+      of a broad range of products. These include books, music, videos, consumer electronics,
+      clothing and household products. The majority of Amazon&#8217;s sales are products
+      sold by Amazon, though many are from third-party sellers. </p>
+
+
+      <p>Amazon was founded in 1994 and is headquartered in <a href="/maps/city/Seattle"
+      title="Seattle, Washington" rel="nofollow">Seattle, Washington</a>. It has direct
+      international operations in the United States, Canada, France, Germany, Japan,
+      and the United Kingdom. </p>
+
+
+      <p>Since 2004, Amazon has begun to rapidly expand its web services arsenal.
+      Products such as <a href="http://www.crunchbase.com/product/amazon-ec2" title="Amazon
+      EC2">Amazon EC2</a> (Elastic Compute Cloud) and <a href="http://www.crunchbase.com/product/amazon-s3"
+      title="Amazon S3">Amazon S3</a> (Simple Storage System), <a href="http://www.crunchbase.com/product/amazon-route-53/"
+      title="Amazon Route 53">Amazon Route 53</a> have been large successes.  </p>
+
+
+      <p>Some of Amazon&#8217;s recent acquisitions include <a href="http://www.crunchbase.com/company/shopbop"
+      title="Shopbop">Shopbop</a> (2006),  <a href="http://www.crunchbase.com/company/abebooks"
+      title="Abebooks">Abebooks</a> (2008), <a href="http://www.crunchbase.com/company/zappos"
+      title="Zappos">Zappos</a> (2009), <a href="http://www.crunchbase.com/company/lovefilm"
+      title="LOVEFiLM">LOVEFiLM</a> (2011).</p>
+
+
+      <p>As of Q1 2011, Amazon has approximately 137 million active customers worldwide.
+      It was also reported that there are 2 million merchants selling on Amazon equaling
+      a third of the total listings. North America currently represents 55.4% of sales
+      with the other 44.6% in the International market.</p>', products: '{0: <Product:
+      Amazon EC2>, 1: <Product: Amazon S3>, 2: <Product: Amazon Mechanical Turk>,
+      3: <Product: Amazon Fresh>, 4: <Product: Amazon Kindle>, 5: <Product: Amazon
+      Video on Demand>, 6: <Product: Amazon Unbox>, 7: <Product: Amazon EBS>, 8: <Product:
+      Amazon BookSurge>, 9: <Product: Amazon Web Services>, 10: <Product: Amazon Kindle
+      2>, 11: <Product: Amazon Elastic MapReduce>, 12: <Product: Amazon Kindle DX>,
+      13: <Product: Kindle for iPhone>, 14: <Product: Amazon Studios>, 15: <Product:
+      A2Z Development>, 16: <Product: A9.com>, 17: <Product: Alexa Internet>, 18:
+      <Product: Audible.com>, 19: <Product: IMDb>, 20: <Product: Lovefilm>, 21: <Product:
+      Woot>, 22: <Product: Quidsi>, 23: <Product: Touchco>, 24: <Product: SnapTell>,
+      25: <Product: Lexcycle>, 26: <Product: CustomFlix>, 27: <Product: Tastemakers>,
+      28: <Product: Shopbop>, 29: <Product: Fabric.com>, 30: <Product: Without A Box>,
+      31: <Product: Mobipocket.com>, 32: <Product: BookSurge>, 33: <Product: CDNOW>,
+      34: <Product: Accept.com>, 35: <Product: Alexa>, 36: <Product: Exchange.com>,
+      37: <Product: Bookpages>, 38: <Product: Amazon Route 53>, 39: <Product: Kindle
+      Fire>, 40: <Product: Kindle Touch>}', salaries: 'Could not find amazon   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=amazon',
+    size: Could not find company size, ticker: 'NASDAQ:AMZN', website: 'http://amazon.com/'}
+  model: companyapp.company
+  pk: amazon
+- fields: {CEO: Tim Cook, IPO_year: '1980', acquisitions: '{0: u''PA Semi'', 1: u''Silicon
+      Color'', 2: u''Emagic'', 3: u''Propel Software'', 4: u''Zayante'', 5: u''Placebase'',
+      6: u''Lala'', 7: u''Quattro Wireless'', 8: u''Intrinsity'', 9: u''Siri'', 10:
+      u''Poly9'', 11: u''imsense'', 12: u''Polar Rose'', 13: u''Network Innovations'',
+      14: u''Orion Network Systems'', 15: u''Styleware'', 16: u''Nashoba Systems'',
+      17: u''Coral Software'', 18: u''NeXT Computer'', 19: u''Xemplar Education'',
+      20: u''Raycer Graphics'', 21: u''NetSelector'', 22: u''Spruce Technologies'',
+      23: u''PowerSchool'', 24: u''Nothing Real'', 25: u''Fingerworks'', 26: u''Proximity'',
+      27: u''Anobit Technologies'', 28: u''Chomp'', 29: u''AuthenTec'', 30: u''Particle'',
+      31: u''WiFiSLAM'', 32: u''HopStop.com'', 33: u''Locationary'', 34: u''Passif
+      Semiconductor'', 35: u''Matcha'', 36: u''Embark'', 37: u''AlgoTrim'', 38: u''Cue'',
+      39: u''PrimeSense'', 40: u''Topsy Labs''}', company_type: Public company, competitors: '{0:
+      ''Microsoft'', 1: ''Experience Commerce'', 2: ''Nokia'', 3: ''Sony'', 4: ''Adobe
+      Systems'', 5: ''SlideRocket'', 6: ''modu'', 7: ''MUBI'', 8: ''Songbird'', 9:
+      ''HTC Corp'', 10: ''Motorola Solutions'', 11: ''Palm'', 12: ''Blackberry'',
+      13: ''Dell'', 14: ''Hewlett-Packard'', 15: ''Samsung Electronics'', 16: ''LG'',
+      17: ''AdMob'', 18: ''Khitchdee''}', description: '', founded: '1976', industry: hardware,
+    investments: '{0: [u''Imagination Technologies'', 32000000.0, 2008], 1: [u''Imagination
+      Technologies'', 5170000.0, 2009], 2: [u''ELAN Microelectronics'', 5000000.0,
+      2012]}', location: '{0: (u''Cupertino'', u''CA'')}', overview: '<p>Apple Inc.,
+      formerly Apple Computer, Inc., is an American multinational corporation headquartered
+      in Cupertino, California, that designs, develops, and sells consumer electronics,
+      computer software and personal computers. Its best-known hardware products are
+      the Mac line of computers, the iPod music player, the iPhone smartphone, and
+      the iPad tablet computer. Its consumer software includes the OS X and iOS operating
+      systems, the iTunes media browser, the Safari web browser, and the iLife and
+      iWork creativity and productivity suites.</p>
+
+
+      <p>The company was founded on April 1, 1976, and incorporated as Apple Computer,
+      Inc. on January 3, 1977. The word &#8220;Computer&#8221; was removed from its
+      name on January 9, 2007, the same day Steve Jobs introduced the iPhone, reflecting
+      its shifted focus towards consumer electronics.</p>
+
+
+      <p>Apple is the world&#8217;s second-largest information technology company
+      by revenue after Samsung Electronics, and the world&#8217;s third-largest mobile
+      phone maker after Samsung and Nokia. Fortune magazine named Apple the most admired
+      company in the United States in 2008, and in the world from 2008 to 2012. On
+      September 30, 2013, Apple surpassed Coca-Cola to become the world&#8217;s most
+      valuable brand in the Omnicom Group&#8217;s &#8220;Best Global Brands&#8221;
+      report. However, the company has received criticism for its contractors&#8217;
+      labor practices, and for Apple&#8217;s own environmental and business practices.</p>',
+    products: '{0: <Product: iPhone>, 1: <Product: MobileMe>, 2: <Product: iPhone
+      3G>, 3: <Product: App Store>, 4: <Product: iTunes>, 5: <Product: OS X>, 6: <Product:
+      Apple TV>, 7: <Product: Safari>, 8: <Product: iPhone 3GS>, 9: <Product: Magic
+      Mouse>, 10: <Product: DigitalColor Meter>, 11: <Product: iPad>, 12: <Product:
+      iPod>, 13: <Product: Final Cut Studio>, 14: <Product: Logic Studio>, 15: <Product:
+      iWork>, 16: <Product: iLife>, 17: <Product: Aperture>, 18: <Product: iPhone
+      4>, 19: <Product: Ping>, 20: <Product: MacBook Air>, 21: <Product: iPad 2>,
+      22: <Product: iCloud>, 23: <Product: OS X Lion>, 24: <Product: iOS>, 25: <Product:
+      iAd>, 26: <Product: iPhone 4S>, 27: <Product: Siri>, 28: <Product: iPad 2012>,
+      29: <Product: iPhone 5>}', salaries: 'Could not find apple   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=apple',
+    size: '80000', ticker: 'NASDAQ:AAPL', website: 'http://www.apple.com'}
+  model: companyapp.company
+  pk: apple
+- fields: {CEO: Collin Jackson, IPO_year: Has not IPO'ed yet, acquisitions: '{}',
+    company_type: Private company, competitors: '{}', description: Objective-C for
+      Android, founded: '2011', industry: mobile, investments: '{}', location: '{0:
+      (u''San Francisco'', u''CA'')}', overview: '<p>Apportable&#8217;s platform allows
+      iOS applications to run on Android devices automatically, without requiring
+      extensive changes to the original Objective-C or C++ code.</p>', products: '{}',
+    salaries: 'Could not find apportable   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=apportable',
+    size: '40', ticker: Not publicly traded, website: 'http://www.apportable.com/'}
+  model: companyapp.company
+  pk: apportable
+- fields: {CEO: Dustin Moskovitz, IPO_year: Has not IPO'ed yet, acquisitions: '{}',
+    company_type: Private company, competitors: '{0: ''Hall'', 1: ''Jira'', 2: ''Producteev'',
+      3: ''Sony'', 4: ''Teamwork Project Manager''}', description: Do great things.,
+    founded: '2009', industry: software, investments: '{}', location: '{0: (u''San
+      Francisco'', u''CA'')}', overview: "<p>Asana is a shared task list for your\
+      \ team \u2013 the best way to communicate, organize, and track your work. </p>\n\
+      \n<p>It was founded by <a href=\"/person/dustin-moskovitz\" title=\"Dustin Moskovitz\"\
+      \ rel=\"nofollow\">Dustin Moskovitz</a>, a co-founder of <a href=\"/company/facebook\"\
+      \ title=\"Facebook\" rel=\"nofollow\">Facebook</a>, and <a href=\"/person/justin-rosenstein\"\
+      \ title=\"Justin Rosenstein\" rel=\"nofollow\">Justin Rosenstein</a>, an alum\
+      \ of both Facebook and <a href=\"/company/google\" title=\"Google\" rel=\"nofollow\"\
+      >Google</a>. </p>\n\n<p>Asana&#8217;s mission is to increase the potential output\
+      \ of every team\u2019s efforts: to empower humanity to do great things. </p>",
+    products: '{}', salaries: 'Could not find asana   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=asana',
+    size: '40', ticker: Not publicly traded, website: 'http://www.asana.com'}
+  model: companyapp.company
+  pk: asana
+- fields: {CEO: Crawford Beveridge, IPO_year: '1990', acquisitions: '{0: u''SoftImage'',
+      1: u''Robobat'', 2: u''Moldflow'', 3: u''3D Geo'', 4: u''ALGOR'', 5: u''PlanPlatform'',
+      6: u''Illuminate Labs'', 7: u''Blue Ridge Numerics'', 8: u''Pixlr'', 9: u''Instructables'',
+      10: u''Numenus'', 11: u''Vela Systems'', 12: u''Socialcam'', 13: u''Qontext'',
+      14: u''Firehole Composites'', 15: u''Tinkercad'', 16: u''Scaleform'', 17: u''Kynogon'',
+      18: u''Evolver''}', company_type: Public company, competitors: '{0: ''LovelyCharts'',
+      1: ''progeCAD USA'', 2: ''iCADMac''}', description: design software, founded: '1982',
+    industry: software, investments: '{0: [u''OnLive'', None, 2009], 1: [u''Vela Systems'',
+      6000000.0, 2010], 2: [u''Gehry Technologies'', 10500000.0, 2011], 3: [u''Bolt.io'',
+      3900000.0, 2013], 4: [u''deviantART'', 10037704.0, 2013]}', location: '{0: (u''San
+      Rafael'', u''CA'')}', overview: '<p>Autodesk is a software design and service
+      company. The company operates in four segments: Platform Solutions and Emerging
+      Business and Other (PSEB); Architecture, Engineering, and Construction (AEC);
+      Manufacturing Solutions (MSD); and Media and Entertainment (M&amp;E). </p>
+
+
+      <p>The company primarily serves customers in architectural, engineering and
+      construction, manufacturing, geospatial mapping, and digital media and entertainment
+      markets through distributors and resellers in the Americas, Europe, the Middle
+      East, Africa, and the Asia Pacific.</p>', products: '{}', salaries: 'Could not
+      find autodesk   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=autodesk',
+    size: '7800', ticker: 'NASDAQ:ADSK', website: 'http://www.autodesk.com'}
+  model: companyapp.company
+  pk: autodesk
+- fields: {CEO: Aaron Levie, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Increo
+      Solutions'', 1: u''Crocodoc'', 2: u''Folders'', 3: u''dLoop''}', company_type: Private
+      company, competitors: '{0: ''Dropbox'', 1: ''Memeo'', 2: ''digitalbucket.net'',
+      3: ''Memopal'', 4: ''MyBloop'', 5: ''Wuala'', 6: ''Nomadesk'', 7: ''MyOtherDrive'',
+      8: ''Huddle'', 9: ''eSnips'', 10: ''Citrix ShareFile'', 11: ''Doocuments'',
+      12: ''Egnyte'', 13: ''SugarSync'', 14: ''Amazon Cloud Drive'', 15: ''Mozy'',
+      16: ''Qontext'', 17: ''PanteraTools'', 18: ''WatchDox'', 19: ''Hightail'', 20:
+      ''Infrascale'', 21: ''Accellion'', 22: ''Thru, Inc.''}', description: Cloud
+      Content Management, founded: '2005', industry: network_hosting, investments: '{}',
+    location: '{0: (u''Los Altos'', u''CA'')}', overview: '<p>After starting as a
+      college business project in 2005, Box was officially launched in March of 2006
+      with the vision of connecting people, devices and networks. Box provides more
+      than 8 million users with secure cloud content management and collaboration.
+      They say their platform &#8220;allows personal and commercial content to be
+      accessible, sharable, and storable in any format from anywhere.&#8221;</p>',
+    products: '{0: <Product: Box>, 1: <Product: Box $rev>}', salaries: 'Could not
+      find box   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=box',
+    size: '950', ticker: Not publicly traded, website: 'http://www.box.com/'}
+  model: companyapp.company
+  pk: box
+- fields: {CEO: John Major, IPO_year: '1998', acquisitions: '{0: u''Ocatalica'', 1:
+      u''DuneNetworks'', 2: u''Teknovus'', 3: u''Innovision Research & Technology'',
+      4: u''Beceem Communications'', 5: u''Percello'', 6: u''Gigle Networks'', 7:
+      u''Provigent'', 8: u''SCsquare'', 9: u''NetLogic Microsystems'', 10: u''BroadLight'',
+      11: u''Aeluros''}', company_type: Public company, competitors: '{}', description: semiconductors
+      for wired and wireless, founded: '1991', industry: mobile, investments: '{0:
+      [u''BroadLight'', 12000000.0, 2007], 1: [u''BroadLight'', 10000000.0, 2005],
+      2: [u''Tilera'', 25000000.0, 2010]}', location: '{0: (u''Irvine'', u''CA'')}',
+    overview: "<p>Broadcom Corporation engages in the design, development, and supply\
+      \ of semiconductors for wired and wireless communications equipment manufacturers.\
+      \ The company\xE2\u20AC\u2122s products enable the delivery of voice, video,\
+      \ data, and multimedia to and throughout the home, office, and mobile environment.\
+      \ It provides a portfolio of system-on-a-chip and software solutions to manufacturers\
+      \ of computing and networking equipment, digital entertainment and broadband\
+      \ access products, and mobile devices. </p>\n\n<p>Broadcom Corporation was founded\
+      \ in 1991.</p>", products: '{}', salaries: 'Could not find broadcom   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=broadcom',
+    size: '7400', ticker: 'NASDAQ:BRCM', website: 'http://www.broadcom.com/'}
+  model: companyapp.company
+  pk: broadcom
+- fields: {CEO: Ralph J. Roberts, IPO_year: None, acquisitions: '{0: u''Plaxo'', 1:
+      u''DailyCandy'', 2: u''thePlatform'', 3: u''Fandango'', 4: u''Radiance'', 5:
+      u''Vehix'', 6: u''NBC Universal'', 7: u''The700Level.com'', 8: u''Adelphia Communications'',
+      9: u''TechTV''}', company_type: Private company, competitors: '{}', description: '',
+    founded: '1963', industry: games_video, investments: '{0: [u''GridNetworks'',
+      9500000.0, 2007], 1: [u''GridNetworks'', 10500000.0, 2008], 2: [u''BroadLogic
+      Network Technologies'', 17000000.0, 2007], 3: [u''Clearwire'', 920000000.0,
+      2009], 4: [u''Clearwire'', 1500000000.0, 2009], 5: [u''Clearwire'', 3200000000.0,
+      2008], 6: [u''Invite Media'', 4000000.0, 2009], 7: [u''Kiwi Crate'', 2000000.0,
+      2011], 8: [u''SnagFilms'', 6000000.0, 2013]}', location: '{0: (u''Philadelphia'',
+      u''PA'')}', overview: '<p>Comcast is one of the leading providers of cable,
+      entertainment and communications products and services in the United States.</p>',
+    products: '{}', salaries: 'Could not find comcast   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=comcast',
+    size: '100000', ticker: 'NASDAQ:CMCSA', website: 'http://comcast.com/'}
+  model: companyapp.company
+  pk: comcast
+- fields: {CEO: Kevin Rollins, IPO_year: '1988', acquisitions: '{0: u''MessageOne'',
+      1: u''Equallogic'', 2: u''Zing Systems'', 3: u''Everdream'', 4: u''Perot Systems'',
+      5: u''Exanet'', 6: u''Ocarina Networks'', 7: u''Boomi'', 8: u''Alienware'',
+      9: u''Acs (UK)'', 10: u''SilverBack Technologies'', 11: u''ASAP Software'',
+      12: u''The Networked Storage Company'', 13: u''Kace networks'', 14: u''Scalent
+      Systems'', 15: u''Compellent Technologies'', 16: u''SecureWorks'', 17: u''AppAssure
+      Software'', 18: u''Wyse Technology'', 19: u''Quest Software'', 20: u''Gale Technologies'',
+      21: u''CREDANT Technologies'', 22: u''Enstratius'', 23: u''Kitenga'', 24: u''Ocarina
+      Technologies'', 25: u''RNA Networks''}', company_type: Public company, competitors: '{0:
+      ''HTC Corp'', 1: ''Hewlett-Packard'', 2: ''Gateway''}', description: '', founded: '1984',
+    industry: hardware, investments: '{0: [u''Fusion-io'', 47500000.0, 2009], 1: [u''NextIO'',
+      18800000.0, 2008], 2: [u''Mirantis'', 10000000.0, 2013], 3: [u''Skyera'', 51600000.0,
+      2013]}', location: '{0: (u''Round Rock'', u''TX'')}', overview: '<p>Dell is
+      an end-to-end solutions provider that has evolved from a PC manufacturer to
+      an enterprise IT solutions partner with servers, storage, networking,software
+      and services that enable customers to drive results, create competitive advantage
+      and expand their opportunities. </p>', products: '{}', salaries: 'Could not
+      find dell   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=dell',
+    size: '80000', ticker: 'NASDAQ:DELL', website: 'http://www.dell.com'}
+  model: companyapp.company
+  pk: dell
+- fields: {CEO: Richard H. Anderson, IPO_year: Has not IPO'ed yet, acquisitions: '{}',
+    company_type: Private company, competitors: '{}', description: No available description,
+    founded: None, industry: Could not find industry, investments: '{}', location: '{}',
+    overview: No overview, products: '{}', salaries: 'Could not find delta-air-lines   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=delta-air-lines',
+    size: Could not find company size, ticker: Not publicly traded, website: Could
+      not find homepage}
+  model: companyapp.company
+  pk: delta-air-lines
+- fields: {CEO: Drew Houston, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''TapEngage'',
+      1: u''Snapjoy'', 2: u''Cove'', 3: u''Audiogalaxy'', 4: u''Mailbox'', 5: u''Endorse'',
+      6: u''Foundry Hiring'', 7: u''Sold''}', company_type: Private company, competitors: '{0:
+      ''Syncplicity'', 1: ''Jungle Disk'', 2: ''Syncplicity'', 3: ''Wuala'', 4: ''Topia
+      Technology'', 5: ''MobileMe'', 6: ''SpiderOak'', 7: ''Mozy'', 8: ''broolz'',
+      9: ''SugarSync'', 10: ''ElephantDrive'', 11: ''zumodrive'', 12: ''Nomadesk'',
+      13: ''Crate'', 14: ''ASUS WebStorage'', 15: ''xambox'', 16: ''Hightail'', 17:
+      ''Carbonite'', 18: ''Topia Technology'', 19: ''Pivotpoint Software'', 20: ''SendThisFile'',
+      21: ''Omnidrive'', 22: ''Zectar'', 23: ''Soonr'', 24: ''Evernote'', 25: ''MySites'',
+      26: ''LiveKive'', 27: ''Egnyte'', 28: ''4shared'', 29: ''AeroFS'', 30: ''Qontext'',
+      31: ''Accellion'', 32: ''Infinit'', 33: ''Infrascale'', 34: ''Thru, Inc.'',
+      35: ''TeamDrive'', 36: ''Dropmysite''}', description: 'Always have your stuff,
+      wherever you are', founded: '2007', industry: software, investments: '{}', location: '{0:
+      (u''San Francisco'', u''CA''), 1: (u''Dublin'', u''IRL'')}', overview: '<p>Dropbox
+      was founded in 2007 by Drew Houston and Arash Ferdowsi. Frustrated by working
+      from multiple computers, Drew was inspired to create a service that would let
+      people bring all their files anywhere, with no need to email around attachments.
+      Drew created a demo of Dropbox and showed it to fellow MIT student Arash Ferdowsi,
+      who dropped out with only one semester left to help make Dropbox a reality.
+      Guiding their decisions was a relentless focus on crafting a simple and reliable
+      experience across every computer and phone. </p>
+
+
+      <p>Drew and Arash moved to San Francisco in fall 2007, secured seed funding
+      from Y Combinator, and set about building a world-class engineering team. In
+      fall 2008, Sequoia Capital led a $7.2M Series A with Accel Partners to help
+      bring Dropbox to people everywhere.</p>', products: '{0: <Product: DropBox>}',
+    salaries: 'Could not find dropbox   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=dropbox',
+    size: '350', ticker: Not publicly traded, website: 'http://www.dropbox.com'}
+  model: companyapp.company
+  pk: dropbox
+- fields: {CEO: Pierre Omidyar, IPO_year: '1998', acquisitions: '{0: u''PayPal'',
+      1: u''Shopping.com'', 2: u''Tradera'', 3: u''MicroPlace'', 4: u''StubHub'',
+      5: u''Half.com'', 6: u''Bill Me Later'', 7: u''Den Bla Avis'', 8: u''Opusforum.org'',
+      9: u''Gumtree'', 10: u''Loquo'', 11: u''Rent.com'', 12: u''Marktplaats.nl'',
+      13: u''Baazee'', 14: u''EachNet'', 15: u''CARad'', 16: u''Kurant'', 17: u''Vuvox'',
+      18: u''GittiGidiyor.com'', 19: u''ViA-Online'', 20: u''Gmarket'', 21: u''RedLaser'',
+      22: u''Jump'', 23: u''Butterfield & Butterfield'', 24: u''Billpoint'', 25: u''alando.de'',
+      26: u''StumbleUpon'', 27: u''Positronic'', 28: u''Milo'', 29: u''Critical Path
+      Software'', 30: u''brands4friends'', 31: u''GSI Commerce'', 32: u''Where'',
+      33: u''MissionFish'', 34: u''Magento'', 35: u''Zong'', 36: u''Skype'', 37: u''The
+      Gifts Project'', 38: u''Hunch'', 39: u''BillSAFE'', 40: u''Flockish'', 41: u''Svpply'',
+      42: u''2dehands.be'', 43: u''2ememain.be'', 44: u''Decide.com'', 45: u''Bureau
+      Of Trade'', 46: u''Shutl''}', company_type: Public company, competitors: '{0:
+      ''Taobao'', 1: ''Seatwave'', 2: ''Craigslist'', 3: ''Darrb'', 4: ''Infibeam'',
+      5: ''OLX'', 6: ''MyFab'', 7: ''Wigix'', 8: ''MyStore.com'', 9: ''iList'', 10:
+      ''erento'', 11: ''Corkin'', 12: ''CellBazaar'', 13: ''MySkip.com'', 14: ''1000
+      Markets'', 15: ''Swapidy'', 16: ''Equallo''}', description: Online Marketplace,
+    founded: '1995', industry: web, investments: '{0: [u''ChannelAdvisor'', 30000000.0,
+      2007], 1: [u''ChannelAdvisor'', 7000000.0, 2004], 2: [u''ChannelAdvisor'', 18000000.0,
+      2005], 3: [u''ChannelAdvisor'', 20000000.0, 2008], 4: [u''Craigslist'', 13500000.0,
+      2004], 5: [u''Meetup'', 4500000.0, 2006], 6: [u''Skype'', 50000000.0, 2009],
+      7: [u''Appcelerator'', 9000000.0, 2010], 8: [u''Magento'', 22500000.0, 2010],
+      9: [u''Quikr India'', 8000000.0, 2011], 10: [u''Shipwire'', 6000000.0, 2011],
+      11: [u''Appcelerator'', 15000000.0, 2011], 12: [u''Quikr India'', 32000000.0,
+      2012], 13: [u''Snapdeal'', 75000000.0, 2013], 14: [u''Bypass Mobile'', 3500000.0,
+      2013], 15: [u''Appcelerator'', 12100000.0, 2013], 16: [u''Cuturia'', 200000.0,
+      2012]}', location: '{0: (u''San Jose'', u''CA'')}', overview: '<p>Founded in
+      1995 in San Jose, CA, eBay connects millions of buyers and sellers globally
+      in the world&#8217;s largest online marketplace, utilizing <a href="/company/paypal"
+      title="PayPal" rel="nofollow">PayPal</a> to ensure secure transactions. The
+      company also operates specialized marketplaces such as <a href="/company/stubhub"
+      title="StubHub" rel="nofollow">StubHub</a>, the world&#8217;s largest ticket
+      marketplace, and eBay Classifieds sites, which together have a presence in more
+      than 1,000 cities around the world. </p>
+
+
+      <p>eBay items can be sold either via a silent auction, in which users input
+      the maximum price they are willing to pay and for which the site will automatically
+      increase bids as necessary up to that maximum, or via &#8220;Buy It Now,&#8221;
+      with which they purchase items at a set price. </p>
+
+
+      <p>eBay products and companies include eBay Marketplace, Media Marketplace,
+      <a href="http://www.crunchbase.com/company/paypal" title="PayPal">PayPal</a>,
+      <a href="http://www.crunchbase.com/company/half-com" title="half.com">half.com</a>,
+      <a href="http://www.crunchbase.com/company/microplace" title="MicroPlace">MicroPlace</a>,
+      <a href="http://www.crunchbase.com/company/shopping-com" title="Shopping.com">Shopping.com</a>,
+      <a href="http://www.crunchbase.com/company/rent-com" title="Rent.com">Rent.com</a>,
+      <a href="http://www.crunchbase.com/company/stubhub" title="Stubhub">Stubhub</a>
+      and various online classifieds. </p>', products: '{0: <Product: eBay Marketplace>,
+      1: <Product: eBay Classifieds>, 2: <Product: eBay Mobile Application>, 3: <Product:
+      eBay Desktop>}', salaries: 'Could not find ebay   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=ebay',
+    size: '15000', ticker: 'NASDAQ:EBAY', website: 'http://ebay.com'}
+  model: companyapp.company
+  pk: ebay
+- fields: {CEO: Harry L. You, IPO_year: '1986', acquisitions: '{0: u''PI Corporation'',
+      1: u''Iomega'', 2: u''Decho'', 3: u''Configuresoft'', 4: u''WysDM Software'',
+      5: u''Data Domain'', 6: u''FastScaleTechnology'', 7: u''Kazeon'', 8: u''Mozy'',
+      9: u''Archer Technologies'', 10: u''Verid'', 11: u''Network Intelligence'',
+      12: u''Greenplum Software'', 13: u''Bus-Tech'', 14: u''Isilon Systems'', 15:
+      u''Prisa Networks'', 16: u''Legato Systems'', 17: u''Documentum'', 18: u''Data
+      General Corporation'', 19: u''SOFTWORKS'', 20: u''CrosStor Software'', 21: u''FilePool'',
+      22: u''Astrum Software'', 23: u''VMware'', 24: u''Dantz Development Corporation'',
+      25: u''Allocity'', 26: u''SMARTS'', 27: u''Rainfinity'', 28: u''Acartus'', 29:
+      u''Captiva Software'', 30: u''Internosis'', 31: u''Authentica'', 32: u''Kashya'',
+      33: u''Interlink Group'', 34: u''nlayers'', 35: u''ProActivity'', 36: u''RSA
+      Security'', 37: u''Neartek'', 38: u''Avamar Technologies'', 39: u''Valyd Software'',
+      40: u''Geniant'', 41: u''X-Hive Corporation'', 42: u''BusinessEdge Solutions'',
+      43: u''Voyence'', 44: u''Document Sciences'', 45: u''Infra Corporation'', 46:
+      u''Conchango'', 47: u''NetWitness'', 48: u''Pivotal Labs'', 49: u''XtremIO'',
+      50: u''Syncplicity'', 51: u''Watch4Net'', 52: u''Silicium Security'', 53: u''Silver
+      Tail Systems'', 54: u''Likewise Software'', 55: u''ScaleIO'', 56: u''Aveksa''}',
+    company_type: Public company, competitors: '{0: ''nexTier Networks'', 1: ''Sepaton'',
+      2: ''PernixData''}', description: '', founded: '1979', industry: enterprise,
+    investments: '{0: [u''Aristos Logic'', 13360000.0, 2007], 1: [u''Initiate Systems'',
+      26000000.0, 2008], 2: [u''Varonis Systems'', 15000000.0, 2009], 3: [u''Verari
+      Systems'', 20000000.0, 2007], 4: [u''Silver Spring Networks'', 24000000.0, 2011],
+      5: [u''VCE'', None, 2009], 6: [u''MongoDB, Inc.'', 150000000.0, 2013]}', location: '{0:
+      (u''Hopkinton'', u''MA'')}', overview: '<p>EMC is a manufacturer of software
+      and systems for information management and storage.  EMC produces a range of
+      enterprise storage products, including hardware disk arrays and storage management
+      software. Its flagship product, the Symmetrix, is the foundation of storage
+      networks in many large data centers.</p>', products: '{0: <Product: Symmetrix>}',
+    salaries: 'Could not find emc   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=emc',
+    size: Could not find company size, ticker: 'NYSE:EMC', website: 'http://emc.com'}
+  model: companyapp.company
+  pk: emc
+- fields: {CEO: Bo Hedfors, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Telcordia
+      Technologies'', 1: u''BelAir Networks''}', company_type: Private company, competitors: '{0:
+      ''Nokia Siemens Networks'', 1: ''Alcatel-Lucent'', 2: ''Huawei Technologies''}',
+    description: Telecom services and technology provider, founded: '1876', industry: mobile,
+    investments: '{0: [u''Arantech'', 10000000.0, 2005], 1: [u''Skorpios Technologies'',
+      19000000.0, 2011], 2: [u''Sand 9'', 3000000.0, 2012]}', location: '{0: (u''Stockholm'',
+      u''SWE'')}', overview: '<p>Ericsson is the world&#8217;s leading provider of
+      technology and services to telecom operators. Ericsson is the leader in 2G,
+      3G and 4G mobile technologies, and provides support for networks with over 2
+      billion subscribers and has the leading position in managed services. </p>
+
+
+      <p>The company&#8217;s portfolio comprises mobile and fixed network infrastructure,
+      telecom services, software, broadband and multimedia solutions for operators,
+      enterprises and the media industry. </p>
+
+
+      <p>The Sony Ericsson and ST-Ericsson joint ventures provide consumers with feature-rich
+      personal mobile devices. </p>
+
+
+      <p>Ericsson is advancing its vision of being the &#8220;prime driver in an all-communicating
+      world&#8221; through innovation, technology, and sustainable business solutions.
+      </p>
+
+
+      <p>Working in 175 countries, more than 80,000 employees generated revenue of
+      SEK 206.5 billion (USD 27.1 billion) in 2009.</p>
+
+
+      <p>Founded in 1876 with the headquarters in Stockholm, Sweden, Ericsson is listed
+      on OMX NASDAQ, Stockholm and NASDAQ New York.</p>', products: '{}', salaries: 'Could
+      not find ericsson   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=ericsson',
+    size: '80000', ticker: Not publicly traded, website: 'http://www.ericsson.com'}
+  model: companyapp.company
+  pk: ericsson
+- fields: {CEO: Renaud Visage, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Lanyrd'',
+      1: u''Eventioz''}', company_type: Private company, competitors: '{0: ''RegOnline'',
+      1: ''Eventbee'', 2: ''amiando'', 3: ''Acteva'', 4: ''Ticket ABC'', 5: ''Guestlist'',
+      6: ''Eventat'', 7: ''CharityHappenings.org/ticketing'', 8: ''Eventarc'', 9:
+      ''ticketea'', 10: ''Eventbee'', 11: ''TicketDerby'', 12: ''WebEvents Global'',
+      13: ''FanFueled'', 14: ''CHARGED.fm'', 15: ''Ticketbud'', 16: ''Bookitbee'',
+      17: ''EventRegist'', 18: ''Fikket'', 19: ''Vendini''}', description: Online
+      event management & ticketing, founded: '2006', industry: web, investments: '{}',
+    location: '{0: (u''San Francisco'', u''CA'')}', overview: "<p>Eventbrite is a\
+      \ self-service online ticketing platform that people all over the world use\
+      \ to create events, sell tickets and manage registrations for events of all\
+      \ types and sizes.  Eventbrite has processed 140M tickets for organizers, totaling\
+      \ more than $2 billion in gross ticket sales in 179 countries. Nearly 60,000\
+      \ organizers around the world use Eventbrite each month to manage, promote and\
+      \ sell tickets and registrations to all types of events \u2014 from small classes,\
+      \ book signings and networking gatherings, to concerts, festivals and conventions\
+      \ for tens of thousands of attendees. The events platform also makes it easy\
+      \ for anyone to discover events via their website or mobile app, and easily\
+      \ share events with friends. In this way, Eventbrite brings communities together\
+      \ by encouraging people to connect through live experiences.  </p>\n\n<p>Eventbrite&#8217;s\
+      \ investors include DAG Ventures, Sequoia Capital, T. Rowe Price, Tenaya Capital\
+      \ and Tiger Global.</p>\n\n<p>For more information on creating, promoting or\
+      \ selling tickets to events; or find interesting live experiences around the\
+      \ world, visit <a href=\"http://www.eventbrite.com\" title=\"eventbrite.com\"\
+      \ rel=\"nofollow\">eventbrite.com</a>.</p>", products: '{0: <Product: Eventbrite>,
+      1: <Product: At The Door>, 2: <Product: At The Door Card Reader>, 3: <Product:
+      At The Door Ticket Printer>, 4: <Product: Eventbrite Mobile App>}', salaries: 'Could
+      not find eventbrite   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=eventbrite',
+    size: '200', ticker: Not publicly traded, website: 'http://www.eventbrite.com'}
+  model: companyapp.company
+  pk: eventbrite
+- fields: {CEO: Stepan Pachikov, IPO_year: Has not IPO'ed yet, acquisitions: '{0:
+      u''Skitch'', 1: u''Penultimate''}', company_type: Private company, competitors: '{0:
+      ''reQall'', 1: ''Springpad'', 2: ''Memonic'', 3: ''Simperium'', 4: ''Catch.com'',
+      5: ''Kippt''}', description: Remember everything., founded: '2004', industry: software,
+    investments: '{}', location: '{0: (u''Redwood City'', u''CA'')}', overview: '<p>Evernote
+      allows users to capture, organize, and find information across multiple platforms.
+      Users can take notes, clip webpages, snap photos using their mobile phones,
+      create to-dos, and record audio. All data is synchronized with the Evernote
+      web service and made available to clients on Windows, Mac, Web, and mobile devices.  Additionally,
+      the Evernote web service performs image recognition on all incoming notes, making
+      printed or handwritten text found within images searchable. </p>', products: '{0:
+      <Product: Evernote>, 1: <Product: Evernote Peek>, 2: <Product: Evernote Hello>,
+      3: <Product: Evernote Food>, 4: <Product: Evernote Clearly>}', salaries: 'Could
+      not find evernote   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=evernote',
+    size: '280', ticker: Not publicly traded, website: 'http://www.evernote.com/'}
+  model: companyapp.company
+  pk: evernote
+- fields: {CEO: Mark Zuckerberg, IPO_year: '2012', acquisitions: '{0: u''Parakey'',
+      1: u''FriendFeed'', 2: u''Octazen Solutions'', 3: u''Divvyshot'', 4: u''ShareGrove'',
+      5: u''Nextstop'', 6: u''Chai Labs'', 7: u''drop.io'', 8: u''Zenbe'', 9: u''Rel8tion'',
+      10: u''Pursuit'', 11: u''Beluga'', 12: u''Snaptu'', 13: u''Sofa'', 14: u''Push
+      Pop Press'', 15: u''Friend.ly'', 16: u''Digital Staircase'', 17: u''Strobe'',
+      18: u''WhoGlue'', 19: u''Gowalla'', 20: u''GazeHawk'', 21: u''Sendoid'', 22:
+      u''Instagram'', 23: u''Tagtile'', 24: u''Glancee'', 25: u''Bolt | Peters'',
+      26: u''threadsy'', 27: u''Spool'', 28: u''Karma'', 29: u''Face.com'', 30: u''Atlas
+      Advertiser Suite'', 31: u''Storylane'', 32: u''Lightbox'', 33: u''Hot Potato'',
+      34: u''Osmeta'', 35: u''Spaceport.io'', 36: u''Parse'', 37: u''Monoidics'',
+      38: u''Jibbigo'', 39: u''Onavo'', 40: u''SportStream''}', company_type: Public
+      company, competitors: '{0: ''MySpace'', 1: ''Friendster'', 2: ''Slide'', 3:
+      ''Zvents'', 4: ''FriendFeed'', 5: ''hi5'', 6: ''Flickr'', 7: ''Bebo'', 8: ''AOL'',
+      9: ''CityIN'', 10: ''Tagged'', 11: ''VK.com'', 12: ''tymr'', 13: ''Compass (by
+      Hugleberry Corp.)''}', description: Social network, founded: '2004', industry: social,
+    investments: '{0: [u''LuckyCal'', 350000.0, 2009], 1: [u''Wildfire, a division
+      of Google'', None, 2008], 2: [u''Oceanshalo'', 1700000.0, 2013]}', location: '{0:
+      (u''Menlo Park'', u''CA''), 1: (u''Dublin'', u''IRL''), 2: (u''New York'', u''NY'')}',
+    overview: "<p>Facebook is the world&#8217;s largest social network, with over\
+      \ <a href=\"http://techcrunch.com/2013/07/24/facebook-growth-2/\" title=\"1.15\
+      \ billion monthly active users\">1.15 billion monthly active users</a>.</p>\n\
+      \n<p>Facebook was founded by <a href=\"http://www.crunchbase.com/person/mark-zuckerberg\"\
+      \ title=\"Mark Zuckerberg\">Mark Zuckerberg</a> in February 2004, initially\
+      \ as an exclusive network for Harvard students. It was a huge hit: in 2 weeks,\
+      \ half of the schools in the Boston area began demanding a Facebook network.\
+      \ Zuckerberg immediately recruited his friends <a href=\"http://www.crunchbase.com/person/dustin-moskovitz\"\
+      \ title=\"Dustin Moskovitz\">Dustin Moskovitz</a>, <a href=\"/person/chris-hughes\"\
+      \ title=\"Chris Hughes\" rel=\"nofollow\">Chris Hughes</a>, and <a href=\"/person/eduardo-saverin\"\
+      \ title=\"Eduardo Saverin\" rel=\"nofollow\">Eduardo Saverin</a> to help build\
+      \ Facebook, and within four months, Facebook added 30 more college networks.\
+      \ </p>\n\n<p>The original idea for the term Facebook came from Zuckerberg&#8217;s\
+      \ high school (Phillips Exeter Academy). The Exeter Face Book was passed around\
+      \ to every student as a way for students to get to know their classmates for\
+      \ the following year. It was a physical paper book until Zuckerberg brought\
+      \ it to the internet.</p>\n\n<p>With this success, Zuckerberg, Moskowitz and\
+      \ Hughes moved out to <a href=\"/maps/city/Palo%2520Alto\" title=\"Palo Alto\"\
+      \ rel=\"nofollow\">Palo Alto</a> for the summer and rented a sublet. A few weeks\
+      \ later, Zuckerberg ran into the former cofounder of <a href=\"/company/napster\"\
+      \ title=\"Napster\" rel=\"nofollow\">Napster</a>, <a href=\"/person/sean-parker\"\
+      \ title=\"Sean Parker\" rel=\"nofollow\">Sean Parker</a>. Parker soon moved\
+      \ in to Zuckerberg&#8217;s apartment and they began working together.  Parker\
+      \ provided the introduction to their first investor, <a href=\"/person/peter-thiel\"\
+      \ title=\"Peter Thiel\" rel=\"nofollow\">Peter Thiel</a>, cofounder of <a href=\"\
+      /company/paypal\" title=\"PayPal\" rel=\"nofollow\">PayPal</a> and managing\
+      \ partner of <a href=\"http://www.crunchbase.com/financial-organization/founders-fund\"\
+      \ title=\"The Founders Fund\">The Founders Fund</a>. Thiel invested $500,000\
+      \ into Facebook. </p>\n\n<p>With millions more users, <a href=\"/company/friendster\"\
+      \ title=\"Friendster\" rel=\"nofollow\">Friendster</a> <a href=\"http://www.techcrunch.com/2006/12/12/yahoos-project-fraternity-docs-leaked/\"\
+      \ title=\"attempted\">attempted</a> to acquire the company for $10 million in\
+      \ mid 2004. Facebook turned down the offer and subsequently received $12.7 million\
+      \ in funding from <a href=\"http://www.crunchbase.com/financial-organization/accel-partners\"\
+      \ title=\"Accel Partners\">Accel Partners</a>, at a valuation of <a href=\"\
+      http://www.techcrunch.com/2005/09/07/85-of-college-students-use-facebook/\"\
+      \ title=\"around $100 million\">around $100 million</a>. Facebook continued\
+      \ to grow, opening up to high school students in September 2005 and adding an\
+      \ immensely popular photo sharing feature the next month. The next spring, Facebook\
+      \ received $25 million in funding from <a href=\"http://www.crunchbase.com/financial-organization/greylock\"\
+      \ title=\"Greylock Partners\">Greylock Partners</a> and <a href=\"http://www.crunchbase.com/financial-organization/meritech-capital-partners\"\
+      \ title=\"Meritech Capital\">Meritech Capital</a>, as well as previous investors\
+      \ Accel Partners and Peter Thiel. The pre-money valuation for this deal was\
+      \ about $525 million. Facebook subsequently <a href=\"http://www.techcrunch.com/2006/04/26/facebook-goes-beyond-college-high-school-markets/\"\
+      \ title=\"opened\">opened</a> up to work networks, eventually amassing over\
+      \ 20,000 work networks. Finally in September 2006, Facebook <a href=\"http://www.techcrunch.com/2006/09/26/facebook-just-launched-open-registrations/\"\
+      \ title=\"opened\">opened</a> to anyone with an email address. </p>\n\n<p>In\
+      \ the summer of 2006, <a href=\"/company/yahoo\" title=\"Yahoo\" rel=\"nofollow\"\
+      >Yahoo</a> <a href=\"http://www.techcrunch.com/2006/09/21/facebook-and-yahoo-in-acquisition-talks-for-1-billion/\"\
+      \ title=\"attempted to acquire\">attempted to acquire</a> the company for $1\
+      \ billion dollars. <a href=\"http://www.wired.com/techbiz/startups/news/2007/09/ff_facebook\"\
+      \ title=\"Reports\" rel=\"nofollow\">Reports</a> actually indicated that Zuckerberg\
+      \ made a verbal agreement to sell Facebook to Yahoo. A few days later when Yahoo&#8217;s\
+      \ stock price took a dive, the offer was lowered to $800 million and Zuckerberg\
+      \ walked away from the deal.  Yahoo later <a href=\"http://www.techcrunch.com/2006/12/12/yahoos-project-fraternity-docs-leaked/\"\
+      \ title=\"offered\">offered</a> $1 billion again, this time Zuckerberg turned\
+      \ Yahoo down and earned instant notoriety as the &#8220;kid&#8221; who turned\
+      \ down a billion. This was not the first time Zuckerberg turned down an acquisition\
+      \ offer; <a href=\"/company/viacom\" title=\"Viacom\" rel=\"nofollow\">Viacom</a>\
+      \ had previously <a href=\"http://www.techcrunch.com/2006/03/28/facebook-is-doing-the-skype-dance/\"\
+      \ title=\"unsuccessfully\">unsuccessfully</a> attempted to acquire the company\
+      \ for $750 million in March 2006. </p>\n\n<p>Not long after, in October 2007,\
+      \ <a href=\"http://www.techcrunch.com/2007/10/24/facebook-takes-the-microsoft-money-and-runs/\"\
+      \ title=\"Microsoft invested\">Microsoft invested</a> $240 million into Facebook\
+      \ for 1.6 percent of the company in. This meant a valuation of over $15 billion,\
+      \ making Facebook the <a href=\"http://www.techcrunch.com/2007/10/25/perspective-facebook-is-now-5th-most-valuable-us-internet-company/\"\
+      \ title=\"5th most valuable US Internet company\">5th most valuable US Internet\
+      \ company</a>, yet with only $150 million in annual revenue. Many explained\
+      \ Microsoft&#8217;s decision as being solely driven by the desire to outbid\
+      \ Google.</p>\n\n<p>Facebook continued to receive funding, most notably in January\
+      \ 2011 receiving a <a href=\"http://techcrunch.com/2011/01/21/facebook-raises-1-5-billion-at-50-billion-valuation/\"\
+      \ title=\"$1.5 billion round\">$1.5 billion round</a>, valuing the company at\
+      \ $50 billion. A year later, in February 2012, Facebook <a href=\"http://techcrunch.com/2012/02/01/facebook-files-for-5-billion-ipo/\"\
+      \ title=\"announced\">announced</a> that it was filing for its long-anticipated\
+      \ initial public offering. The company went public on May 18, 2012, opening\
+      \ on the NASDAQ with shares trading at <a href=\"http://techcrunch.com/2012/05/18/facebook-share-open-10-5-higher-at-42/\"\
+      \ title=\"$42.05\">$42.05</a>.</p>\n\n<p>One sour note for Facebook has been\
+      \ the <a href=\"http://www.techcrunch.com/2007/07/16/the-ghost-of-zuckerbergs-past-may-haunt-facebook-ipo/\"\
+      \ title=\"controversy\">controversy</a> with social network ConnectU. The founders\
+      \ of ConnectU, former classmates of Mark Zuckerberg at Harvard, allege that\
+      \ Zuckerberg stole their original source code for Facebook. The ordeal has <a\
+      \ href=\"http://www.techcrunch.com/2007/10/10/facebook-vs-connectu-facebook-makes-untrue-assertions-claims-connectu/\"\
+      \ title=\"gone to court\">gone to court</a>, and has now been <a href=\"http://techcrunch.com/2011/06/22/after-seven-years-the-winklevosses-give-up-on-battle-with-facebook/\"\
+      \ title=\"resolved\">resolved</a>. </p>\n\n<p>Notwithstanding this lingering\
+      \ controversy, Facebook&#8217;s growth has been staggering. Facebook announced\
+      \ <a href=\"http://techcrunch.com/2012/02/01/facebooks-s-1-845-million-users-every-month-more-than-half-daily-and-nearly-half-mobile/\"\
+      \ title=\"astonishing numbers\">astonishing numbers</a> in February 2012 upon\
+      \ filing for its IPO. As of July 2013, over <a href=\"http://techcrunch.com/2013/07/24/facebook-growth-2/\"\
+      \ title=\"1.15 billion\">1.15 billion</a> users log into Facebook every month,\
+      \ and 669 million users log in daily. Mobile users now make up half of Facebook&#8217;s\
+      \ user base, with 819 million monthly actives. Facebook has also announced that\
+      \ by the end of 2011 there had been 100 billion friend connections, and in recent\
+      \ months users had been registering 2.7 billion Likes and Comments per day.\
+      \ Facebook is one of the <a href=\"http://techcrunch.com/2010/12/29/hitwise-facebook-overtakes-google-to-become-most-visited-website-in-2010/\"\
+      \ title=\"most trafficked sites\">most trafficked sites</a> in the US, and its\
+      \ international growth has been impressive. Additionally, Facebook is the top\
+      \ photo sharing site with 250 million photos uploaded per day.</p>\n\n<p>Facebook\
+      \ users&#8217; <a href=\"http://www.techcrunch.com/2007/11/13/i-just-cant-be-a-college-student-without-facebook/\"\
+      \ title=\"passion\">passion</a>\u2014or <a href=\"http://www.techcrunch.com/2007/03/09/career-advice-dont-choose-facebook-over-your-job/\"\
+      \ title=\"addiction\">addiction</a>\u2014to the site is unparalleled: more than\
+      \ half use the product every single day and users spend an average of 19 minutes\
+      \ a day on Facebook. The site&#8217;s popularity has garnered it pop culture\
+      \ fame, so much so that in 2010 a feature film entitled <em>The Social Network</em>\
+      \ was released which chronicled Facebook&#8217;s inception.</p>\n\n<p>In its\
+      \ 2012 <a href=\"http://techcrunch.com/2012/02/01/facebook-files-for-5-billion-ipo/\"\
+      \ title=\"IPO filing\">IPO filing</a>, Facebook announced that it intends to\
+      \ grow in the near future by expanding its global user base, increasing engagement\
+      \ by developing new social tools, improving the mobile experience, and creating\
+      \ more value for advertisers and users.</p>", products: '{0: <Product: Facebook
+      Platform>, 1: <Product: Facebook News Feed>, 2: <Product: Facebook Chat>, 3:
+      <Product: Facebook Connect>, 4: <Product: Facebook Mobile>, 5: <Product: Facebook>,
+      6: <Product: Facebook Lite>, 7: <Product: Facebook Places>}', salaries: 'Could
+      not find facebook   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=facebook',
+    size: '5299', ticker: 'NASDAQ:FB', website: 'http://facebook.com'}
+  model: companyapp.company
+  pk: facebook
+- fields: {CEO: Evan Doll, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Ellerdale''}',
+    company_type: Private company, competitors: '{0: ''PadPressed'', 1: ''OnSwipe'',
+      2: ''Zite'', 3: ''Pulse'', 4: ''FFFavs'', 5: ''Culturalite''}', description: Digital
+      Social Magazine, founded: '2010', industry: news, investments: '{}', location: '{0:
+      (u''Palo Alto'', u''CA'')}', overview: '<p>Flipboard is a digital social magazine
+      that aggregates web links from your social circle, i.e. <a href="/company/twitter"
+      title="Twitter" rel="nofollow">Twitter</a> and <a href="/company/facebook" title="Facebook"
+      rel="nofollow">Facebook</a>, and displays the content in magazine form on an
+      iPad. Headed by Mike McCue, former CEO of Tellme, and Evan Doll, former Senior
+      iPhone Engineer at Apple, Flipboard is on a quest to transform how people discover,
+      view and share content by combining the beauty and ease of print with the power
+      of social media.</p>', products: '{}', salaries: 'Could not find flipboard   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=flipboard',
+    size: Could not find company size, ticker: Not publicly traded, website: 'http://www.flipboard.com'}
+  model: companyapp.company
+  pk: flipboard
+- fields: {CEO: Dennis Crowley, IPO_year: Has not IPO'ed yet, acquisitions: '{}',
+    company_type: Private company, competitors: '{0: ''Rally'', 1: ''Plyce'', 2: ''Tellmewhere'',
+      3: ''Mobnotes'', 4: ''Blockboard'', 5: ''Yelp'', 6: ''Brightkite'', 7: ''Grindr'',
+      8: ''Shoutitout'', 9: ''Friendticker'', 10: ''Geodruid'', 11: ''Whrrl'', 12:
+      ''hummba.com'', 13: ''feest.je'', 14: ''Where'', 15: ''Facebook'', 16: ''Check.In'',
+      17: ''Loopt'', 18: ''Hotlist'', 19: ''tymr'', 20: ''AlterGeo'', 21: ''CrowdSpot
+      Mobile App'', 22: ''Compass (by Hugleberry Corp.)'', 23: ''Clink.Me Ltd''}',
+    description: Location based mobile network, founded: '2009', industry: mobile,
+    investments: '{}', location: '{0: (u''New York'', u''NY''), 1: (u''San Francisco'',
+      u''CA'')}', overview: '<p>Foursquare is a free mobile app that helps you keep
+      up and meet up with friends. Since 2009, more than 45 million people have joined
+      Foursquare, checking in around the world over 5 billion times. Those check-ins
+      power the Foursquare Explore search engine, which provides personalized recommendations
+      of the best places nearby. In addition, more than 1.6 million businesses (from
+      large brands to small merchants) have used our advertising and merchant tools
+      to attract and maintain valuable customers. More than 50,000 developers, including
+      some of the internet&#8217;s most popular properties use the Foursquare API
+      to add location to their apps. Foursquare was founded in New York City, and
+      has offices in San Francisco and London. </p>
+
+
+      <p>Foursquare has applications for iPhone, Android, BlackBerry, Windows Phone,
+      Nokia S40/Asha, and Symbian.</p>
+
+
+      <p>Foursquare was created by <a href="http://www.crunchbase.com/person/dennis-crowley"
+      title="Dennis Crowley">Dennis Crowley</a> and <a href="http://www.crunchbase.com/person/naveen-selvadurai"
+      title="Naveen Selvadurai">Naveen Selvadurai</a>.</p>', products: '{}', salaries: 'Could
+      not find foursquare   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=foursquare',
+    size: '170', ticker: Not publicly traded, website: 'http://foursquare.com/'}
+  model: companyapp.company
+  pk: foursquare
+- fields: {CEO: Zita Cai, IPO_year: '2011', acquisitions: '{0: u''Mob.ly'', 1: u''Citydeal.de'',
+      2: u''ClanDescuento'', 3: u''Ludic Labs'', 4: u''Disdus.com'', 5: u''Pelago'',
+      6: u''Zappedy'', 7: u''Obtiva'', 8: u''SoSasta.com'', 9: u''OpenCal'', 10: u''Campfire
+      Labs'', 11: u''Mertado'', 12: u''Adku'', 13: u''Hyperpublic'', 14: u''Kima Labs'',
+      15: u''Uptake'', 16: u''FeeFighters'', 17: u''Darberry'', 18: u''Savored'',
+      19: u''Breadcrumb'', 20: u''Breadcrumb'', 21: u''CommerceInterface'', 22: u''Glassmap'',
+      23: u''MashLogic'', 24: u''Crowdmass'', 25: u''Blink Booking'', 26: u''SideTour'',
+      27: u''Ditto'', 28: u''Ticket Monster''}', company_type: Public company, competitors: '{0:
+      ''Woot'', 1: ''Whiskey Media'', 2: ''Pricebunch'', 3: ''BuyWithMe'', 4: ''Scoutmob'',
+      5: ''8coupons'', 6: ''Adility'', 7: ''Tippr'', 8: ''LivingSocial'', 9: ''Chitown
+      Deals'', 10: ''Dealster'', 11: ''Twongo'', 12: ''CrowdSavings.com'', 13: ''Peixe
+      Urbano'', 14: ''AtCost.com'', 15: ''SocialBuy'', 16: ''FamilyFinds'', 17: ''Urban
+      Spoils'', 18: ''Clickon'', 19: ''8coupons'', 20: ''Yipit'', 21: ''Ouffer'',
+      22: ''HomeRun'', 23: ''BligDeal'', 24: ''TownHog'', 25: ''KupiKupon'', 26: ''Vigoda'',
+      27: ''Crowd Cut'', 28: ''mycoupon'', 29: ''Google Offers'', 30: ''Gilt Groupe'',
+      31: ''Skeduler'', 32: ''TownWizard'', 33: ''PLAYHawaii'', 34: ''Coupay''}',
+    description: Local Daily Deals, founded: '2008', industry: web, investments: '{0:
+      [u''Jump On It'', 5000000.0, 2010], 1: [u''StartX'', 400000.0, 2013], 2: [u''SumUp'',
+      None, 2013]}', location: '{0: (u''Chicago'', u''IL''), 1: (u''Palo Alto'', u''CA''),
+      2: (u''San Francisco'', u''CA''), 3: (u''Seattle'', u''WA'')}', overview: "<p>Groupon\
+      \ (NASDAQ: GRPN) is a global leader in local commerce, making it easy for people\
+      \ around the world to search and discover great businesses at unbeatable prices.\
+      \ </p>\n\n<p>Groupon is reinventing the traditional small business world by\
+      \ providing merchants with a suite of products and services, including customizable\
+      \ deals, payments processing capabilities and point-of-sale solutions to help\
+      \ them attract more customers and run their operations more effectively. By\
+      \ leveraging the company\u2019s global relationships and scale, Groupon offers\
+      \ consumers incredible deals on the best stuff to eat, see, do, and buy in 48\
+      \ countries. With Groupon, shoppers discover the best a city has to offer with\
+      \ Groupon Local, enjoy vacations with Groupon Getaways, and find a curated selection\
+      \ of electronics, fashion, home furnishings and more with Groupon Goods. </p>\n\
+      \n<p>To subscribe to Groupon emails, visit www.Groupon.com. To learn more about\
+      \ the company&#8217;s merchant solutions and how to work with Groupon, visit\
+      \ www.GrouponWorks.com.</p>", products: '{}', salaries: 'Could not find groupon   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=groupon',
+    size: '10000', ticker: 'NASDAQ:GRPN', website: 'http://www.groupon.com'}
+  model: companyapp.company
+  pk: groupon
+- fields: {CEO: Marcus Ryu, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Millbrook,
+      Inc.''}', company_type: Private company, competitors: '{}', description: '',
+    founded: '2001', industry: software, investments: '{}', location: '{0: (u''San
+      Mateo'', u''CA'')}', overview: '<p>Guidewire Software, Inc. provides technology
+      solutions to the property, casualty, and workers compensation insurance industry.
+      It offers ClaimCenter, a Web-based claims system that supports various lines
+      of personal, commercial, and workers&#8217; compensation insurance; BillingCenter,
+      a Web-based enterprise application for coordinating, executing, and recording
+      receivables transactions; and PolicyCenter, a Web-based underwriting and policy
+      administration system for personal and commercial line carriers. The company
+      also offers implementation services; and assessment services for property and
+      casualty companies in North America. Its solutions are used to perform various
+      insurance operations, including billing, underwriting, policy, and claim management.
+      Guidewire Software, Inc. was founded in 2001 and is based in San Mateo, California
+      with additional offices in London, Munich, Paris, Sydney, Tokyo, Hong Kong,
+      and Toronto.</p>', products: '{}', salaries: 'Could not find guidewire-software   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=guidewire-software',
+    size: Could not find company size, ticker: Not publicly traded, website: 'http://www.guidewire.com/'}
+  model: companyapp.company
+  pk: guidewire-software
+- fields: {CEO: Meg Whitman, IPO_year: '1978', acquisitions: '{0: u''Snapfish'', 1:
+      u''EDS'', 2: u''Opsware'', 3: u''VoodooPC'', 4: u''ExcellerateHRO'', 5: u''IBRIX'',
+      6: u''Colubris Networks'', 7: u''Lefthand Networks'', 8: u''PolyServe'', 9:
+      u''Tabblo'', 10: u''3Com'', 11: u''Palm'', 12: u''Melodeo'', 13: u''Fortify
+      Software'', 14: u''Stratavia'', 15: u''ArcSight'', 16: u''Eon Systems'', 17:
+      u''Apollo Computer'', 18: u''Applied Optoelectronic Tech'', 19: u''Avantek'',
+      20: u''ABB CADE'', 21: u''Colorado Memory Systems'', 22: u''Four Pi Systems'',
+      23: u''Metrix Network Systems'', 24: u''BT & D Technologies'', 25: u''EEsof'',
+      26: u''Versatest'', 27: u''CaLan'', 28: u''Convex Computer'', 29: u''ElseWare'',
+      30: u''Division'', 31: u''Trellis Software & Controls'', 32: u''Vital Technology
+      Pte Ltd'', 33: u''PROLIN'', 34: u''Optimization Systems'', 35: u''Heartstream'',
+      36: u''Scope Communications'', 37: u''Open Skies'', 38: u''Telegra'', 39: u''Transoft
+      Networks'', 40: u''Dazel'', 41: u''Security Force Software'', 42: u''Qosnetics'',
+      43: u''Bluestone Software'', 44: u''Trinagy'', 45: u''StorageApps'', 46: u''Artivision
+      Technologies'', 47: u''Compaq'', 48: u''PipeBeach'', 49: u''Extreme Logic'',
+      50: u''Talking Blocks'', 51: u''Persist Technologies'', 52: u''Consera Software'',
+      53: u''Triaton'', 54: u''TruLogica'', 55: u''Novadigm'', 56: u''CEC Europe Service
+      Management'', 57: u''Synstar'', 58: u''CGNZ'', 59: u''AppIQ'', 60: u''RLX Technologies'',
+      61: u''Scitex Vision'', 62: u''Trustgenix'', 63: u''PIXACO'', 64: u''Peregrine
+      Systems'', 65: u''OuterBay Technologies'', 66: u''Silverwire Holding'', 67:
+      u''The Technology Partners'', 68: u''Mercury Interactive'', 69: u''Knightsbridge
+      Solutions'', 70: u''Bitfone Corporation'', 71: u''Bristol Technology'', 72:
+      u''Arteis'', 73: u''SPI Dynamics'', 74: u''Neoware'', 75: u''MacDermid ColorSpan'',
+      76: u''Atos Origin Middle East group'', 77: u''EYP Mission Critical Facilities'',
+      78: u''NUR Macroprinters'', 79: u''Exstream Software'', 80: u''Tower Software'',
+      81: u''Vertica Systems'', 82: u''3PAR'', 83: u''Autonomy Corporation'', 84:
+      u''Hiflex Software'', 85: u''VeriFone''}', company_type: Public company, competitors: '{0:
+      ''HTC Corp'', 1: ''Greenplum Software'', 2: ''Dell'', 3: ''CSC'', 4: ''Gateway''}',
+    description: '', founded: '1939', industry: web, investments: '{0: [u''Mimeo'',
+      25000000.0, 2007], 1: [u''Cassatt'', 15000000.0, 2006]}', location: '{0: (u''Palo
+      Alto'', u''CA''), 1: (u''Palo Alto'', u''CA'')}', overview: '<p>Hewlett-Packard
+      technology corporation headquartered in Palo Alto, California, USA. HP is one
+      of the world&#8217;s largest information technology companies and operates in
+      nearly every country. HP specializes in developing and manufacturing computing,
+      data storage, and networking hardware, designing software and delivering services.
+      Major product lines include personal computing devices, enterprise servers,
+      related storage devices, as well as a diverse range of printers and other imaging
+      products. HP markets its products to households, small to medium size businesses
+      and enterprises both directly, via online distribution, consumer-electronics
+      and office-supply retailers, software partners and major technology vendors.</p>
+
+
+      <p>Bill Hewlett and Dave Packard graduated in electrical engineering from Stanford
+      University in 1935. The company originated in a garage in nearby Palo Alto during
+      a fellowship they had with a past professor, Frederick Terman at Stanford during
+      the Great Depression. Terman was considered a mentor to them in forming Hewlett-Packard.
+      In 1939, Packard and Hewlett established Hewlett-Packard (HP) in Packard&#8217;s
+      garage with an initial capital investment of US$538. Hewlett and Packard tossed
+      a coin to decide whether the company they founded would be called Hewlett-Packard
+      or Packard-Hewlett[ Packard won the coin toss but named their electronics manufacturing
+      enterprise the &#8220;Hewlett-Packard Company&#8221;. HP incorporated on August
+      18, 1947, and went public on November 6, 1957.</p>', products: '{0: <Product:
+      HP Upline>, 1: <Product: HP TouchPad>, 2: <Product: HP SlatePro Tablet>, 3:
+      <Product: HP ENVY TouchSmart Ultrabook Laptop>, 4: <Product: HP Deskjet Printer>}',
+    salaries: 'Could not find hewlett-packard   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=hewlett-packard',
+    size: Could not find company size, ticker: 'NYSE:HPQ', website: 'http://www.hp.com'}
+  model: companyapp.company
+  pk: hewlett-packard
+- fields: {CEO: Michael Smalls, IPO_year: Has not IPO'ed yet, acquisitions: '{}',
+    company_type: Private company, competitors: '{}', description: Put Fun to Work,
+    founded: '2009', industry: software, investments: '{}', location: '{0: (u''San
+      Jose'', u''CA'')}', overview: <p>Hoopla Software helps organizations create
+      high performance sales cultures through SaaS solutions that integrated tightly
+      with CRM systems such as Salesforce.com.</p>, products: '{0: <Product: Scoreboard>,
+      1: <Product: Countdown>}', salaries: 'Could not find hoopla-software   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=hoopla-software',
+    size: '22', ticker: Not publicly traded, website: 'http://hoopla.net/'}
+  model: companyapp.company
+  pk: hoopla-software
+- fields: {CEO: Virginia M. Rometty, IPO_year: '1978', acquisitions: '{0: u''Transitive'',
+      1: u''XIV'', 2: u''Telelogic'', 3: u''Exeros'', 4: u''InfoDyne Corporation'',
+      5: u''Diligent Technologies'', 6: u''SPSS'', 7: u''Outblaze'', 8: u''Ounce Labs'',
+      9: u''RedPill Solutions'', 10: u''FilesX'', 11: u''Guardium'', 12: u''Lombardi
+      Software'', 13: u''Initiate Systems'', 14: u''Lotus Development Corporation'',
+      15: u''Intelliden'', 16: u''Cast Iron Systems'', 17: u''Sterling Commerce'',
+      18: u''Storwize'', 19: u''Coremetrics'', 20: u''BigFix'', 21: u''Unica'', 22:
+      u''Netezza'', 23: u''BLADE Network Technologies'', 24: u''Valchemy'', 25: u''PSS
+      Systems'', 26: u''Clarity Systems'', 27: u''Mainspring'', 28: u''CrossWorlds
+      Software'', 29: u''Metamerge'', 30: u''TrelliSoft'', 31: u''HOLOSOFX'', 32:
+      u''PwC Consulting'', 33: u''Access360'', 34: u''EADS Matra Datavision'', 35:
+      u''Tarian Software'', 36: u''Rational Software'', 37: u''Think Dynamics'', 38:
+      u''Aptrix'', 39: u''CrossAccess'', 40: u''Productivity Solutions'', 41: u''Green
+      Pasture Software'', 42: u''Trigo Technologies'', 43: u''Candle'', 44: u''AlphaBlox
+      Corporation'', 45: u''Cyanea Systems'', 46: u''Venetica'', 47: u''Systemcorp
+      A.L.G.'', 48: u''Liberty Insurance Services'', 49: u''Maersk Data'', 50: u''KeyMRO'',
+      51: u''SRD'', 52: u''Corio'', 53: u''Ascential Software'', 54: u''Gluecode Software'',
+      55: u''Meiosys'', 56: u''PureEdge Solutions'', 57: u''Isogon Corporation'',
+      58: u''DWL'', 59: u''DataPower Technology'', 60: u''iPhrase Technologies'',
+      61: u''Network Solutions Private Limited'', 62: u''Bowstreet'', 63: u''ARGUS
+      Semiconductor Software'', 64: u''CIMS Lab'', 65: u''Viacore'', 66: u''Micromuse'',
+      67: u''Language Analysis Systems'', 68: u''BuildForge'', 69: u''Unicorn Solutions'',
+      70: u''Rembo Technology'', 71: u''Webify Solutions'', 72: u''Global Value Solutions'',
+      73: u''MRO Software'', 74: u''FileNet Corporation'', 75: u''Internet Security
+      Systems'', 76: u''Palisades Technology Partners'', 77: u''Consul risk management
+      international'', 78: u''Vallent Corporation'', 79: u''Softek Storage Solutions'',
+      80: u''Watchfire'', 81: u''Webdialogs'', 82: u''DataMirror'', 83: u''Princeton
+      Softech'', 84: u''NovusCG'', 85: u''AptSoft'', 86: u''Solid Information Technology'',
+      87: u''Cognos'', 88: u''Arsenal Digital Solutions'', 89: u''Net Integration
+      Technologies'', 90: u''Encentuate'', 91: u''Platform Solutions'', 92: u''ILOG'',
+      93: u''TRIRIGA'', 94: u''i2'', 95: u''Algorithmics'', 96: u''Q1 Labs'', 97:
+      u''Platform Computing'', 98: u''DemandTec'', 99: u''Emptoris'', 100: u''Green
+      Hat'', 101: u''Worklight'', 102: u''Varicent Software'', 103: u''Vivisimo'',
+      104: u''Tealeaf'', 105: u''Kenexa'', 106: u''Butterfly Software'', 107: u''Star
+      Analytics'', 108: u''Urbancode'', 109: u''SoftLayer'', 110: u''CSL International'',
+      111: u''Trusteer'', 112: u''The Now Factory'', 113: u''Xtify Inc.'', 114: u''Fiberlink'',
+      115: u''Aspera''}', company_type: Public company, competitors: '{0: ''BEA Systems'',
+      1: ''Dell'', 2: ''Hewlett-Packard'', 3: ''Microsoft'', 4: ''Nuance Communications'',
+      5: ''Oracle Corporation'', 6: ''Sun Microsystems'', 7: ''Infoglide Software
+      Corporation'', 8: ''Siperian'', 9: ''UnboundID'', 10: ''Qontext''}', description: '',
+    founded: '1896', industry: software, investments: '{0: [u''EnterpriseDB'', 16000000.0,
+      2008], 1: [u''Sierra Monolithics'', 14200000.0, 2000]}', location: '{0: (u''Armonk'',
+      u''NY'')}', overview: '<p>IBM, acronym for International Business Machines,
+      is a multinational computer technology and consulting corporation. The company
+      is one of the few information technology companies with a continuous history
+      dating back to the 19th century. IBM manufactures and sells computer hardware
+      and software, and offers infrastructure services, hosting services, and consulting
+      services in areas ranging from mainframe computers to nanotechnology..</p>',
+    products: '{0: <Product: Lotus Notes>, 1: <Product: Lotus Sametime>, 2: <Product:
+      Lotus Quickr>, 3: <Product: Lotus Connections>}', salaries: 'Could not find
+      ibm   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=ibm',
+    size: '388000', ticker: 'NYSE:IBM', website: 'http://www.ibm.com'}
+  model: companyapp.company
+  pk: ibm
+- fields: {CEO: Christopher Darby, IPO_year: '1978', acquisitions: '{0: u''Wind River'',
+      1: u''NetEffect'', 2: u''Opened Hand'', 3: u''RapidMind'', 4: u''McAfee'', 5:
+      u''Virtutech'', 6: u''Swiftfoot Graphics AB'', 7: u''Mobilian'', 8: u''Xircom'',
+      9: u''Voice Technologies'', 10: u''XLNT'', 11: u''iPivot'', 12: u''Cilk'', 13:
+      u''Infineon Technologies'', 14: u''CognoVision'', 15: u''Chips and Technologies'',
+      16: u''Havok'', 17: u''Conformative Systems'', 18: u''Sarvega'', 19: u''Oplus
+      Technologies'', 20: u''Envara'', 21: u''West Bay Semiconductor'', 22: u''Sparkolor
+      Corporation'', 23: u''LightLogic'', 24: u''Cognet'', 25: u''VxTel'', 26: u''CAD-UL'',
+      27: u''Ziatech'', 28: u''DataKinetics'', 29: u''Ford Microelectronics'', 30:
+      u''Basis Communications'', 31: u''Kuck & Associates'', 32: u''Picazo Communications'',
+      33: u''GIGA'', 34: u''Ambient Technologies'', 35: u''Thinkit Technologies'',
+      36: u''Parity Software Development'', 37: u''NetBoost'', 38: u''Level One Communications'',
+      39: u''Softcom Microsystems'', 40: u''iCat'', 41: u''Shiva Corporation'', 42:
+      u''Corollary'', 43: u''Dayna Communications'', 44: u''SySDSoft'', 45: u''Fulcrum
+      Microsystems'', 46: u''Olaworks'', 47: u''Whamcloud'', 48: u''Mashery'', 49:
+      u''Aepona'', 50: u''Omek Interactive'', 51: u''Indisys'', 52: u''Sensory Networks'',
+      53: u''Kno'', 54: u''Hacker League''}', company_type: Public company, competitors: '{0:
+      ''PA Semi'', 1: ''AMD''}', description: Microprocessor Developer, founded: '1968',
+    industry: hardware, investments: '{0: [u''Jajah'', 20000000.0, 2007], 1: [u''Six
+      Apart'', 12000000.0, 2006], 2: [u''Atom Entertainment'', 22900000.0, 2001],
+      3: [u''Tutor'', 13500000.0, 2007], 4: [u''BlackArrow'', 12000000.0, 2007], 5:
+      [u''BlackArrow'', 6000000.0, 2004], 6: [u''Endeca'', 25000000.0, 2008], 7: [u''Skyhook
+      Wireless'', 6500000.0, 2005], 8: [u''Skyhook Wireless'', 8500000.0, 2007], 9:
+      [u''Ceedo Technologies'', 4500000.0, 2007], 10: [u''ElephantDrive'', None, 2007],
+      11: [u''Fonality'', 7000000.0, 2007], 12: [u''iPrint'', 7500000.0, 1999], 13:
+      [u''Imagination Technologies'', 23500000.0, 2009], 14: [u''TransGaming'', 500000.0,
+      2009], 15: [u''Clearwire'', 920000000.0, 2009], 16: [u''picoChip'', 20000000.0,
+      2009], 17: [u''Clearwire'', 1500000000.0, 2009], 18: [u''Clearwire'', 3200000000.0,
+      2008], 19: [u''Prover Technology'', None, 2000], 20: [u''VMware'', 218500000.0,
+      2007], 21: [u''Viewpoint Digital'', 13000000.0, 1994], 22: [u''TagArray'', 1800000.0,
+      2007], 23: [u''VCE'', None, 2009]}', location: '{0: (u''Santa Clara'', u''CA'')}',
+    overview: '<p>Intel is best known for producing the microprocessors found in many
+      personal computers. The company also makes a range of other hardware including
+      network cards, motherboards, and graphics chips. </p>
+
+
+      <p>Intel created the first commercial microprocessor chip in 1971, but it was
+      not until the success of the personal computer that microprocessors became their
+      primary business. In the 1980&#8217;s they were an early developer of SRAM and
+      DRAM memory chip, and during the 1990s they invested heavily in new microprocessor
+      designs and in fostering the rapid growth of the PC industry.</p>', products: '{}',
+    salaries: 'Could not find intel   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=intel',
+    size: '86300', ticker: 'NASDAQ:INTC', website: 'http://www.intel.com/'}
+  model: companyapp.company
+  pk: intel
+- fields: {CEO: Scott Cook, IPO_year: '1993', acquisitions: '{0: u''Homestead Technologies'',
+      1: u''Digital Insight'', 2: u''StepUp'', 3: u''PayCycle'', 4: u''Mint.com'',
+      5: u''Medfusion'', 6: u''BooRah'', 7: u''AisleBuyer'', 8: u''Demandforce'',
+      9: u''Payvment'', 10: u''Elastic Intelligence'', 11: u''GoodApril'', 12: u''Level
+      Up Analytics'', 13: u''Full Slate'', 14: u''Docstoc''}', company_type: Public
+      company, competitors: '{0: ''Microsoft'', 1: ''Peachtree'', 2: ''TrackVia''}',
+    description: business & financial mgmt. solutions, founded: '1983', industry: software,
+    investments: '{0: [u''Clinkle'', 25000000.0, 2013]}', location: '{0: (u''Mountain
+      View'', u''CA''), 1: (u''San Diego'', u''CA'')}', overview: "<p>Intuit Inc.\
+      \ is a leading provider of business and financial management solutions for small\
+      \ and mid-sized businesses; financial institutions, including banks and credit\
+      \ unions; consumers and accounting professionals. Its flagship products and\
+      \ services, including QuickBooks\u2122, Quicken\u2122 and TurboTax\u2122, simplify\
+      \ small business management and payroll processing, personal finance, and tax\
+      \ preparation and filing. ProSeries\u2122 and Lacerte\u2122 are Intuit&#8217;s\
+      \ leading tax preparation offerings for professional accountants. The company&#8217;s\
+      \ financial institutions division, anchored by Digital Insight, provides on-demand\
+      \ banking services to help banks and credit unions serve businesses and consumers\
+      \ with innovative solutions.</p>\n\n<p>Founded in 1983, Intuit had annual revenue\
+      \ of $3.2 billion in its fiscal year 2009. The company has approximately 7,800\
+      \ employees with major offices in the United States, Canada, the United Kingdom,\
+      \ India and other locations. More information can be found at www.intuit.com</p>",
+    products: '{}', salaries: 'Could not find intuit   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=intuit',
+    size: '8000', ticker: 'NASDAQ:INTU', website: 'http://www.intuit.com/'}
+  model: companyapp.company
+  pk: intuit
+- fields: {CEO: Alexander Asseily, IPO_year: Has not IPO'ed yet, acquisitions: '{0:
+      u''Massive Health'', 1: u''BodyMedia''}', company_type: Private company, competitors: '{}',
+    description: '', founded: '1999', industry: hardware, investments: '{}', location: '{0:
+      (u''San Francisco'', u''CA'')}', overview: "<p>For more than a decade, Jawbone\
+      \ has developed products and services for the mobile lifestyle unparalleled\
+      \ in their innovation, ease-of-use and sophistication of design. The company\
+      \ is the creator of the award-winning and best-selling premium ICON Bluetooth\
+      \ headset; the inventor of NoiseAssassin\xAE technology, the world&#8217;s first\
+      \ and only military-grade noise eliminating technology; JAMBOX, the first intelligent\
+      \ wireless speaker and speakerphone; as well as THOUGHTS, a free mobile service\
+      \ that allows users to utilize their voice in a new way. A 2010 IDSA Design\
+      \ of the Decade winner, Jawbone is committed to delivering innovative products\
+      \ that improve the mobile lifestyle through ever-changing software and\nwearability.\
+      \ Jawbone is privately-held and headquartered in San Francisco.</p>", products: '{0:
+      <Product: Jawbone>, 1: <Product: Jambox>}', salaries: 'Could not find jawbone   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=jawbone',
+    size: Could not find company size, ticker: Not publicly traded, website: 'http://jawbone.com'}
+  model: companyapp.company
+  pk: jawbone
+- fields: {CEO: Taps Barclays, IPO_year: '1999', acquisitions: '{0: u''Ankeena Networks'',
+      1: u''Kagoor Networks'', 2: u''Altor Networks'', 3: u''SMobile Systems'', 4:
+      u''Blackwave'', 5: u''Mykonos Software'', 6: u''NetScreen Technologies'', 7:
+      u''Trapeze Networks'', 8: u''Wandl''}', company_type: Public company, competitors: '{0:
+      ''Extreme Neworks'', 1: ''Alcatel-Lucent'', 2: ''Huawei Technologies'', 3: ''Extreme
+      Networks'', 4: ''Check Point Software Technologies'', 5: ''Fortinet'', 6: ''Palo
+      Alto Networks''}', description: '', founded: '1996', industry: security, investments: '{0:
+      [u''Apigee'', 16000000.0, 2006], 1: [u''FireEye'', 14500000.0, 2008], 2: [u''BLADE
+      Network Technologies'', 10000000.0, 2009], 3: [u''Apigee'', 14100000.0, 2010],
+      4: [u''Altor Networks'', 10000000.0, 2010], 5: [u''Trapeze Networks'', 30000000.0,
+      2006], 6: [u''Violin Memory'', 35000000.0, 2011], 7: [u''Sentrigo'', 6000000.0,
+      2010], 8: [u''Cotendo'', 17000000.0, 2011], 9: [u''Violin Memory'', 50000000.0,
+      2012], 10: [u''Vidyo'', 2000000.0, 2012], 11: [u''Typesafe'', 14000000.0, 2012],
+      12: [u''FireEye'', 50000000.0, 2013], 13: [u''Fastback Networks'', 15000000.0,
+      2013], 14: [u''Cloudscaling'', 10000000.0, 2013], 15: [u''Gainspeed'', None,
+      2013], 16: [u''Nominum'', 10000000.0, 2002]}', location: '{0: (u''Sunnyvale'',
+      u''CA'')}', overview: '<p>Juniper Networks, Inc. (Juniper Networks) designs,
+      develops, and sells products and services that together provide its customers
+      with network infrastructure. It segments: Infrastructure and Service Layer Technologies
+      (SLT). The Company&#8217;s Infrastructure segment primarily offers routing and
+      switching products that are used to control and direct network traffic from
+      the core, through the edge, aggregation, and the customer premise equipment
+      level. Infrastructure products include its Internet protocol (IP) routing, carrier
+      Ethernet routing portfolio, and Ethernet switching portfolio. In addition, the
+      Infrastructure segment offers a complete wireless local area network (WLAN)
+      solution. Its SLT segment offers solutions, from protecting the users, applications
+      and data on the network itself to providing network services across a distributed
+      infrastructure. On February 13, 2012, the Company acquired Mykonos Software.
+      </p>', products: '{}', salaries: 'Could not find juniper networks   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=juniper
+      networks', size: Could not find company size, ticker: 'NYSE:JNPR', website: 'http://www.juniper.net'}
+  model: companyapp.company
+  pk: juniper networks
+- fields: {CEO: Joe Fernandez, IPO_year: Has not IPO'ed yet, acquisitions: '{0: u''Blockboard''}',
+    company_type: Private company, competitors: '{0: ''Twitter Grader'', 1: ''PeerIndex'',
+      2: ''PROskore''}', description: Measures Online Influence, founded: '2008',
+    industry: social, investments: '{}', location: '{0: (u''San Francisco'', u''CA'')}',
+    overview: <p>Klout measures influence based on the ability to drive action across
+      the social web. Any person can connect their social network accounts and Klout
+      will generate a score on a scale of 1-100 that represents their ability to engage
+      other people and inspire social actions. Klout enables everyone to gain insights
+      that help them better understand how they influence others. Klout also provides
+      people with opportunities to shape and be recognized for their influence.</p>,
+    products: '{}', salaries: 'Could not find klout   http://www.glassdoor.com/GD/Reviews/company-reviews.htm?clickSource=searchBtn&typedKeyword=&sc.keyword=klout',
+    size: '79', ticker: Not publicly traded, website: 'http://klout.com'}
+  model: companyapp.company
+  pk: klout
