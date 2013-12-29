@@ -10,7 +10,7 @@ from companyapp.companyapp.management.commands.company_api import company_api_fu
 # BIG LIST OF COMPANIES THAT WORK:
 companies = \
 [ \
-'23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
+# '23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
  'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
  'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', \
  'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
