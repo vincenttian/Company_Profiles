@@ -11,9 +11,9 @@ from companyapp.companyapp.management.commands.company_api import company_api_fu
 companies = \
 [ \
 '23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
- 'Comcast', 'Dell', 'Dropbox', 'Ebay', 'EMC', \
+ 'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
  'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', \
- 'Groupon', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
+ 'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
  'Juniper Networks', 'Klout', \
  'Linkedin', 'Magoosh', 'marin software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir-Technologies', \
  'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', \
