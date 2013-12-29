@@ -10,10 +10,10 @@ from companyapp.companyapp.management.commands.company_api import company_api_fu
 # BIG LIST OF COMPANIES THAT WORK:
 companies = \
 [ \
-'23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk',\
- 'box', 'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
+'23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
+ 'Comcast', 'Dell', 'Dropbox', 'Ebay', 'EMC', \
  'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', \
- 'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
+ 'Groupon', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
  'Juniper Networks', 'Klout', \
  'Linkedin', 'Magoosh', 'marin software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir-Technologies', \
  'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', \
@@ -188,6 +188,7 @@ class Command(BaseCommand):
 				salary.url = url
 				company.salaries = str(salary)
 				company.save()
+
 			else:
 				for sa in sal:
 					salary = Salary()
