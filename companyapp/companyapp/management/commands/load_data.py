@@ -9,14 +9,15 @@ from companyapp.companyapp.management.commands.company_api import company_api_fu
 
 # BIG LIST OF COMPANIES THAT WORK:
 companies = \
-['23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk',\
+[ \
+'23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk',\
  'box', 'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
- 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', 'Google', \
+ 'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', \
  'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
  'Juniper Networks', 'Klout', \
  'Linkedin', 'Magoosh', 'marin software', 'Meebo', 'Microsoft', 'Netapp', 'Nvidia', 'Oracle', 'Palantir-Technologies', \
- 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', 'riot games', 'riverbed technology', \
- 'Salesforce', 'Samsung-Electronics', 'Shoretel', 'Shutterfly', 'Skype', \
+ 'Pinterest', 'Pocket', 'Qualcomm', 'Quora', 'rackspace', 'red hat', \
+ 'riverbed technology', 'Salesforce', 'Samsung-Electronics', 'Shoretel', 'Shutterfly', 'Skype', \
  'Snapchat', 'Spotify', 'Square', 'sun microsystems', 'Symantec', 'Tesla-Motors', 'Texas Instruments', \
  'Twitter', 'tubemogul', 'Verizon', 'VMWare', 'Western Digital', \
  'Workday', 'Yahoo', 'yelp'
