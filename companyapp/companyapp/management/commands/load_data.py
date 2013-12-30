@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from companyapp.companyapp.models import *
 from companyapp.companyapp.management.commands.company_api import company_api_function
+from companyapp.api.models import *
 
 # COMPANY LISTS HERE
 # companies = ['delta-air-lines']
@@ -10,7 +11,7 @@ from companyapp.companyapp.management.commands.company_api import company_api_fu
 # BIG LIST OF COMPANIES THAT WORK:
 companies = \
 [ \
-# '23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
+'23andme', 'Amazon', 'Apple', 'Apportable', 'Asana', 'Autodesk','box', \
  'Broadcom', 'Comcast', 'Dell', 'delta-air-lines', 'Dropbox', 'Ebay', 'EMC', \
  'Ericsson', 'Eventbrite', 'Evernote', 'Facebook', 'flipboard', 'Foursquare', \
  'Groupon', 'guidewire-software', 'Hewlett-Packard', 'Hoopla-Software', 'IBM', 'Intel', 'Intuit', 'Jawbone', \
@@ -51,6 +52,7 @@ class Command(BaseCommand):
 			# GETS DATA FROM GLASSDOOR SCRAPING
 			sal = company_api_function(company, 'glassdoor', 'sal')
 			url = company_api_function(company, 'glassdoor', 'url')
+			glassdoor_content = company_api_function(company, 'glassdoor', 'all')
 
 			company = Company()
 			company.name = name
@@ -187,7 +189,6 @@ class Command(BaseCommand):
 				# salary.samples = "Could not find" 
 				salary.url = url
 				company.salaries = str(salary)
-				company.save()
 
 			else:
 				for sa in sal:
@@ -202,7 +203,13 @@ class Command(BaseCommand):
 					salary_list[count] = salary
 					count += 1
 				company.salaries = str(salary_list)
-				company.save()
+
+			# HANDLING API STUFF
+			company.linkedin_content = d1
+			company.crunchbase_content = d2
+			company.glassdoor_content = company.salaries
+
+			company.save()
 			print "Successfully loaded " + name + " into the database" 
 
 	def handle(self, *args, **options):

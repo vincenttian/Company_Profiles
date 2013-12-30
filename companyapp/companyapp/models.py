@@ -38,6 +38,11 @@ class Company(models.Model):
 	products = models.TextField()
 	salaries = models.TextField()
 
+	# FIELDS FOR APIs
+	linkedin_content = models.TextField()
+	glassdoor = models.TextField()
+	crunchbase_content = models.TextField()
+
 	# KEEPING THINGS SIMPLE FOR NOW
 	# competitors = models.ForeignKey('self', related_name = 'competitor')
 	# acquisitions = models.ForeignKey('self', related_name = 'acquisition')

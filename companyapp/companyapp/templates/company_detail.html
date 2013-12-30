@@ -77,15 +77,14 @@
 	<ul class="nav nav-list">
 		<form method="post">
 			{% csrf_token %}
-		    <!-- {{ searchform.as_p }} -->
 		    {{ searchform.company_search }}
 		    <input type="submit" value="Search!" />
 		</form>
 	</u1>
 </div>
-
 <h1> {{ company.name }} </h1>
 
+<!--
 <table class="table table-striped table-bordered">
 	<caption> Basic Information from Crunchbase </caption>
 	<tr>
@@ -102,7 +101,6 @@
 	</tr>
 	<tr>
 		<td> Company CEO: </td>
-		<!-- <td>{{ company.CEO }} </td> -->
 		<td> 
 			<a href="http://en.wikipedia.org/wiki/"> {{ company.CEO }} </a> 
 		</td>
@@ -127,15 +125,10 @@
 		<td> Company industry: </td>
 		<td>{{ company.industry }} </td>
 	</tr>
-	<!--
-	<tr>
-		<td> Company description: </td>
-		<td>{{ company.description }} </td>
-	</tr>
-	-->
+
 </table>
 
-<!-- <div> Company name: {{ company.name }} </div> 
+<div> Company name: {{ company.name }} </div> 
 <div> Company ticker: {{ company.ticker }} </div>
 <div> Company stock_exchange: {{ company.stock_exchange }} </div>
 <div> Company website: {{ company.website }} </div>
@@ -146,7 +139,7 @@
 <div> Company IPO_year: {{ company.IPO_year }} </div>
 <div> Company location: {{ company.location }} </div>
 <div> Company industry: {{ company.industry }} </div>
-<div> Company description: {{ company.description }} </div> -->
+<div> Company description: {{ company.description }} </div>
 
 <table class="table table-striped">
 	<caption> Competitors </caption>
@@ -154,23 +147,17 @@
 	<td>{{ company.competitors }} </td>
 </table>
 
-<!-- <div> Company competitors: {{ company.competitors }} </div> -->
-
 <table class="table table-striped">
 	<caption> Acquisitions </caption>
 	<td> Company acquisitions: </td>
 	<td>{{ company.acquisitions }} </td>
 </table>
 
-<!-- <div> Company acquisitions: {{ company.acquisitions }} </div> -->
-
 <table class="table table-striped">
 	<caption> Investments </caption>
 	<td> Company investments: </td>
 	<td>{{ company.investments }} </td>
 </table>
-
-<!-- <div> Company investments: {{ company.investments }} </div> -->
 
 <table class="table table-striped">
 	<caption> Products </caption>
@@ -184,13 +171,32 @@
 	<td>{{ company.salaries }} </td>
 </table>
 
-<!-- <div> Company products: {{ company.products }} </div> -->
-
-<!-- <div> Company overview: <br></br> {{ company.overview|safe }} </div> -->
 <table class="table table-striped">
 	<caption> Overview </caption>
 	<td> Company overview: </td>
 	<td>{{ company.overview|safe }} </td>
+</table>
+
+-->
+
+<!-- API INFORMATION -->
+
+<table class="table table-striped">
+	<caption> Company crunchbase API content </caption>
+	<td> Crunchbase API JSON object </td>
+	<td>{{ company.crunchbase_content }} </td>
+</table>
+
+<table class="table table-striped">
+	<caption> Company linkedin API content </caption>
+	<td> Linkedin API JSON object </td>
+	<td>{{ company.linkedin_content }} </td>
+</table>
+
+<table class="table table-striped">
+	<caption> Company glassdoor API content </caption>
+	<td> Glassdoor API JSON object </td>
+	<td>{{ company.glassdoor_content }} </td>
 </table>
 
 <br></br>
