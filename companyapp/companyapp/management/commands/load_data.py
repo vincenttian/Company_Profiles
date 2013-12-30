@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from companyapp.companyapp.models import *
 from companyapp.companyapp.management.commands.company_api import company_api_function
-from companyapp.api.models import *
+# from companyapp.api.models import *
 
 # COMPANY LISTS HERE
 # companies = ['delta-air-lines']
