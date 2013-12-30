@@ -207,7 +207,7 @@ class Command(BaseCommand):
 			# HANDLING API STUFF
 			company.linkedin_content = d1
 			company.crunchbase_content = d2
-			company.glassdoor_content = company.salaries
+			company.glassdoor = company.salaries
 
 			company.save()
 			print "Successfully loaded " + name + " into the database" 
